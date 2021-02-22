@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+
+    <!--compatablity with IE-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--responsiveness-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>تسجيل الدخول</title>
+
+    <!--bootstrap rtl stylesheet-->
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css" integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe" crossorigin="anonymous">
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo&display=swap">
+
+    <!--Font awesone-->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+
+    <!--my own stylesheet-->
+    <link rel="stylesheet" href="assets/css/pages.css">
+
+    <!--my own media queries-->
+    <link rel="stylesheet" href="assets/css/media-queries.css">
+</head>
+<body>
+    <!--Starting initial bar-->
+    <section class="initial-bar">
+        <div class="container">
+            <div class="holder d-flex align-content-start flex-wrap justify-content-between">
+                <div class="first">
+                    <a href="#" class=" mr-2">عربي</a>
+                    <a href="#" class="pl-2">EN</a>
+                </div>
+                <div class="second mt-1 ml-auto ml-md-0">
+                    <a href="#"><i class="fab fa-facebook-f mr-1 mr-md-2"></i></a>
+                    <a href="#"><i class="fab fa-instagram mr-1 mr-md-2"></i></a>
+                    <a href="#"><i class="fab fa-twitter mr-1 mr-md-2"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <div class="log-in-initial-bar-edit mt-1 mx-auto mx-md-4">
+                    <div class="d-inline-block">
+                        <a href="create-account-page.html">انشاء حساب جديد</a>
+                    </div>
+                    <div class="d-inline-block ml-4 ml-sm-5">
+                        <a href="log-in.html">الدخول</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Ending initial bar-->
+
+    <!--Starting navbar-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light container d-flex align-content-start flex-wrap">
+        <a class="navbar-brand mb-2" href="index.html">
+            <img src="assets/imgs/logo.png" alt="blood bank logo" height="58px">
+        </a>
+
+        <button class="navbar-toggler mb-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav flex-shrink-0">
+                <li class="nav-item active">
+                <a class="nav-link" href="index.html">الرئيسية <span class="sr-only">(current)</span></a>
+                </li>
+                <div class="mx-1 mt-3 d-none d-md-block" style="border-left:1px solid rgba(0, 0, 0, 0.062);height:50px"></div>
+                <li class="nav-item">
+                <a class="nav-link" href="#">عن بنك الدم</a>
+                </li>
+                <div class="mx-1 mt-3 d-none d-md-block" style="border-left:1px solid rgba(0, 0, 0, 0.062);height:50px"></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">المقالات</a>
+                </li>
+                <div class="mx-1 mt-3 d-none d-md-block" style="border-left:1px solid rgba(0, 0, 0, 0.062);height:50px"></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">طلبات التبرع</a>
+                </li>
+                <div class="mx-1 mt-3 d-none d-md-block" style="border-left:1px solid rgba(0, 0, 0, 0.062);height:50px"></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">من نحن</a>
+                </li>
+                <div class="mx-1 mt-3 d-none d-md-block" style="border-left:1px solid rgba(0, 0, 0, 0.062);height:50px"></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">اتصل بنا</a>
+                </li>
+            </ul>
+            <a href="#" class="btn btn-lg log-in-navbar-edit d-block mt-4 ml-auto">طلب تبرع</a>
+        </div>
+  
+        
+            
+
+    </nav>
+    <!--Ending navbar-->
+
+    <!--Starting log in-->
+    <section class="log-in pt-2">
+        <div class="container">
+            <!--Starting breadcrumb-->
+            <nav aria-label="breadcrumb" class="my-3">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item py-2"><a href="index.html">الرئيسية</a></li>
+                    <li class="breadcrumb-item active py-2" aria-current="page">تسجيل الدخول</li>
+                </ol>
+            </nav>
+            <!--Ending breadcrumb-->
+            <!--Starting personal info-->
+            <div class="personal-info">
+                <img src="assets/imgs/logo.png" class="d-block mx-auto my-5">
+                <input type="tel" class="form-control form-control-lg my-4 mx-auto" placeholder="الجوال">
+                <input type="password" class="form-control form-control-lg my-4 mx-auto" placeholder="كلمة المرور">
+                <div class="row">
+                    <div class="col-sm-6 text-center mt-3 mb-2 mb-md-5">
+                        <input type="checkbox" id="customCheck1">
+                        <label class="ml-3" for="customCheck1">تذكرني</label>
+                    </div>
+                    <div class="col-sm-6 text-center mt-3 mb-2 mb-md-5">
+                        <img src="assets/imgs/complain.png" height="30px">
+                        <a href="#">هل نسيت كلمة المرور</a>
+                    </div>
+                    <div class="col-md-6 text-center mt-5">
+                        <button class="btn btn-lg btn-success rounded-0">دخول</button>
+                    </div>
+                    <div class="col-md-6 text-center mt-5">
+                        <a href="create-account-page.html" class="btn -btn-lg btn-primary rounded-0 pt-3">انشاء حساب جديد</a>
+                    </div>
+                </div>
+            </div>
+            <!--Ending personal info-->
+        </div>
+    </section>
+    <!--Ending log in-->
+
+    <!--Starting footer-->
+    <footer class="mt-4">
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-md-6 col-lg-4 footer-icon">
+                    <div>
+                        <img src="assets/imgs/logo.png">
+                    </div>
+                    <h4 class="my-4">بنك الدم</h4>
+                    <p>
+                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة ، لقد تم توليد هذا النص من مولد النص العربى ، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى .
+إضافة إلى زيادة عدد الحروف التى يولدها التطبيق
+يطلع على صورة حقيقية لتصميم الموقع
+                    </p>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <ul class="text-center">
+                        <li class="mb-3"><a class="here" href="index.html">الرئيسية</a></li>
+                        <li class="mb-3"><a href="#">عن بنك الدم</a></li>
+                        <li class="mb-3"><a href="#">المقالات</a></li>
+                        <li class="mb-3"><a href="#">طلبات التبرع</a></li>
+                        <li class="mb-3"><a href="#">من نحن</a></li>
+                        <li><a href="#">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-4 footer-find">
+                    <p class="mx-auto mb-4 mt-4 mt-md-2 text-center">متوفر على</p>
+                    <img src="assets/imgs/google1.png" class="d-block mx-auto mb-3">
+                    <img src="assets/imgs/ios1.png" class="d-block mx-auto mb-3">
+                </div>
+            </div>
+        </div>
+        <div class="copyright p-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 social-media">
+                        <a href="#" class="ml-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="ml-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="ml-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="ml-3"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="col-md-4">
+                        جميع الحقوق محفوظة ل <a href="#"> بنك الدم</a> &#169; 2021
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Ending footer-->
+
+    <!--font awesome plugin-->
+    <script src="assets/js/all.min.js"></script>
+
+    <!--bootstrap rtl plugins-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.rtlcss.com/bootstrap/v4.5.3/js/bootstrap.min.js" integrity="sha384-VmD+lKnI0Y4FPvr6hvZRw6xvdt/QZoNHQ4h5k0RL30aGkR9ylHU56BzrE2UoohWK" crossorigin="anonymous"></script>
+
+    <!--my own plugin-->
+    <script src="assets/js/my-plugins.js"></script>
+
+</body>
+</html>

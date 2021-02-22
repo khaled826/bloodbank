@@ -1,0 +1,154 @@
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .initial-bar .holder .second {
+        margin-right: 20px!important;
+        margin-left: 20px;
+    }
+
+    .initial-bar .holder .third > div:nth-child(2){
+        border-right:none;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        height: 40px;
+        text-align: left;
+    }
+
+    .slogan, .about-us {
+        background: none;
+    }
+    
+    .slogan p {
+        max-width: 300px;
+        line-height: 30px;
+        font-weight: 700;
+        font-size: 16px;
+    }
+    
+    .about-us p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .whatsapp-number .rounded-pill {
+        
+        width: 250px;
+        letter-spacing: 2px;
+    }
+    .whatsapp-number .rounded-pill p {
+        font-size: 16px;
+    }
+
+    .whatsapp-number .my-theme {
+        background-color: rgba(255, 255, 255, 0.651);
+    }
+
+    .find-us .google-icon img, .find-us .ios-icon img {
+        height: 68px;
+    }
+
+    .registering-form button {
+        font-size: 22px;
+        width: 100px;
+        height: 50px;
+    }
+
+    .log-in-navbar-edit {
+        height: 45px !important;
+        width: 100px !important;
+        font-size: 16px !important
+    }
+
+    .personal-info > img {
+        height: 80px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .initial-bar .holder .second {
+        margin-right: 22px!important;
+        margin-left: 22px;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        height: 40px;
+        text-align: left;
+        display: block;
+    }
+
+    .slogan, .about-us  {
+        background: none;
+    }
+    
+    .about-us p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .whatsapp-number .my-theme {
+        background-color: rgba(255, 255, 255, 0.651);
+    }
+    .find-us .google-icon img, .find-us .ios-icon img {
+        height: 68px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .slogan, .about-us {
+        background: none;
+    }
+    
+    .about-us p {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .whatsapp-number .my-theme {
+        background-color: rgba(255, 255, 255, 0.651);
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) and (max-width: 1499) {
+    
+}
+
+@media (min-width: 1500px) and (max-width: 1699px) {
+    .slogan {
+        background-size: 100% 100%;
+        min-height: 500px;
+    }
+    .slogan .owl-dots {
+        position: absolute;
+        top: 145%;
+        right: 50%;
+    }
+}
+
+@media (min-width: 1700px) {
+    .slogan {
+        background-size: 100% 100%;
+        min-height: 580px;
+    }
+    .slogan .owl-dots {
+        position: absolute;
+        top: 125%;
+        right: 50%;
+    }
+    .slogan p {
+        max-width: 400px;
+        line-height: 60px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-light :nth-child(3) .navbar-nav .nav-link:active, .navbar-light :nth-child(3) .navbar-nav .nav-link:hover,
+    .navbar-light :nth-child(3) .navbar-nav .nav-link:focus {
+        border-bottom: none;
+    }
+}
