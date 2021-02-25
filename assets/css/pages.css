@@ -79,30 +79,26 @@ footer .copyright .row div:nth-child(2) a {color: #c61e29}
 .register .breadcrumb > :nth-child(1) a {
     color: #c0c0c0;
 }
-/*Starting breadcrumb*/
+/*Ending breadcrumb*/
 
 /*Strating registering form*/
 .register {
     border-top: 1px solid #e4e6e5;
     box-shadow: inset 0 10px 10px #e4e6e5;
 }
+.create-account-initial-bar-edit > :first-child a {color: #f7ffff}
 
-.registering-form form {
-    border: 1px solid #eaeaea;
+.create-account-initial-bar-edit > :nth-child(2) a {color: #fead38}
+.create-account-navbar-edit {
+    height: 55px !important;
+    width: 200px !important;
+    font-size: 18px !important
 }
-
-.registering-form .form-control {
-    max-width: 85%;
-    height: 60px;
-}
-
-.registering-form button {
-    font-size: 25px;
-    width: 30%;
-    height: 65px;
-}
+.registering-form form {border: 1px solid #eaeaea}
+.registering-form .form-control {max-width: 85%; height: 60px}
+.registering-form button {font-size: 25px; width: 30%; height: 65px}
 /*Ending registering form*/
-/***Starting register***/
+/***Ending register***/
 /********Ending create account page**********/
 
 
@@ -112,69 +108,28 @@ footer .copyright .row div:nth-child(2) a {color: #c61e29}
     border-top: 1px solid #e4e6e5;
     box-shadow: inset 0 10px 10px #e4e6e5;
 }
-.log-in-initial-bar-edit > :first-child a {
-    color: #f7ffff;
-}
-
-.log-in-initial-bar-edit > :nth-child(2) a {
-    color: #fead38;
-}
-
+.log-in-initial-bar-edit > :first-child a {color: #f7ffff}
+.log-in-initial-bar-edit > :nth-child(2) a {color: #fead38}
 .log-in-navbar-edit {
     height: 55px !important;
     width: 200px !important;
     font-size: 18px !important
 }
-
 /*Starting log in*/
 .log-in .breadcrumb {
     background-color: #FFF;
     font-size: 18px;
     border: 1px solid #ededed;
 }
-.log-in .breadcrumb > :nth-child(1) a {
-    color: #c0c0c0;
-}
-
-.personal-info {
-    border: 1px solid #ededed;
-}
-
-.personal-info > img {
-    height: 120px;
-}
-
-.personal-info > input {
-    border-color: #ededed ;
-    max-width: 80%;
-    height: 60px;
-}
-
-.personal-info [type="checkbox"] {
-    height: 22px;
-    width: 22px;
-}
-
-.personal-info label {
-    font-size: 22px;
-}
-
-.personal-info .row :nth-child(2) a {
-    color: #272727;
-    font-size: 20px;
-}
-
-.personal-info .row :nth-child(3) button {
-    width: 60%;
-    height: 70px;
-    font-size: 25px;
-}
-
-.personal-info .row :nth-child(4) a {
-    width: 60%;
-    height: 70px;
-    font-size: 25px;
-}
+.log-in .breadcrumb > :nth-child(1) a {color: #c0c0c0}
+.personal-info {border: 1px solid #ededed}
+.personal-info > img {height: 120px}
+.personal-info > input {border-color: #ededed; max-width: 80%; height: 60px}
+.personal-info [type="checkbox"] {height: 22px; width: 22px}
+.personal-info label {font-size: 22px}
+.personal-info .row :nth-child(2) a {color: #272727; font-size: 20px}
+.personal-info .row :nth-child(3) button {width: 60%; height: 70px; font-size: 25px}
+.personal-info .row :nth-child(4) a {width: 60%; height: 70px; font-size: 25px}
 /*Ending log in*/
 /********Ending log in page**********/
 
@@ -185,29 +140,15 @@ footer .copyright .row div:nth-child(2) a {color: #c61e29}
     border-top: 1px solid #e4e6e5;
     box-shadow: inset 0 10px 10px #e4e6e5;
 }
-
 /*Starting breadcrumb*/
-.articles-details .breadcrumb {
-    background-color: #FFF;
-    border: 1px solid #eaeaea;
-}
-.articles-details .breadcrumb .customized-breadcrumb-item a {
-    color: #bdbdbd;
-    font-size: 19px;
-}
-.breadcrumb-item+.breadcrumb-item::before {
-    font-size: 19px;
-}
+.articles-details .breadcrumb {background-color: #FFF; border: 1px solid #eaeaea}
+.articles-details .breadcrumb .customized-breadcrumb-item a {color: #bdbdbd; font-size: 19px}
+.breadcrumb-item+.breadcrumb-item::before {font-size: 19px}
 /*Ending breadcrumb*/
 
 /*Starting the article*/
-.articles-details .the-article img {
-    width: 80%;
-}
-.articles-details .the-article .the-article-address {
-    background-color: #2d3e50;
-    color: #fffdfb;
-}
+.articles-details .the-article img {width: 80%}
+.articles-details .the-article .the-article-address {background-color: #2d3e50; color: #fffdfb}
 .articles-details .the-article .the-article-address .the-article-heart-icon {
     font-size: 24px;
     font-weight: 800;
@@ -225,18 +166,14 @@ footer .copyright .row div:nth-child(2) a {color: #c61e29}
 /*Ending the article*/
 
 /*Starting related articles*/
-.related-articles {
-    position: relative;
-}
+.related-articles {position: relative}
 .related-articles h3 {
     color: #ac191f;
     border-bottom: 2px solid #ac191f;
-    width: 120px;
+    width: 190px;
     font-weight: 700;
 }
-.related-articles .card .card-img-top {
-    position: relative;
-}
+.related-articles .card .card-img-top {position: relative}
 .related-articles .card .heart-icon {
     position: absolute;
     top: 5px;
@@ -247,9 +184,7 @@ footer .copyright .row div:nth-child(2) a {color: #c61e29}
     width: 35px; height: 35px;
     font-size: 20px;
 }
-.related-articles .card h5 {
-    color: #b22428;
-}
+.related-articles .card h5 {color: #b22428}
 .related-articles .card a {
     width: 140px;
     color: #faf7fc;
@@ -267,9 +202,7 @@ footer .copyright .row div:nth-child(2) a {color: #c61e29}
     font-size: 60px;
     color: #b4b4b4;
 }
-.related-articles .owl-nav :nth-child(1) {
-    margin-right: 10px;
-}
+.related-articles .owl-nav :nth-child(1) {margin-right: 10px}
 .related-articles .owl-nav button, .articles .owl-nav button:focus  {
     margin-left: 5px;
     outline: none;
@@ -285,53 +218,35 @@ footer .copyright .row div:nth-child(2) a {color: #c61e29}
 }
 
 /*Starting breadcrumb*/
-.contact-us .breadcrumb {
-    background-color: #FFF;
-    border: 1px solid #eaeaea;
-}
+.contact-us .breadcrumb {background-color: #FFF; border: 1px solid #eaeaea}
 .contact-us .breadcrumb .customized-breadcrumb-item-2 a {
     color: #bdbdbd;
     font-size: 19px;
 }
-.breadcrumb-item+.breadcrumb-item::before {
-    font-size: 19px;
-}
+.breadcrumb-item+.breadcrumb-item::before {font-size: 19px}
 /*Ending breadcrumb*/
-.contact-us .contact-platforms, .contact-us .contact-info {
-    border: 1px solid #e9e9e9;
-}
+.contact-us .contact-platforms, .contact-us .contact-info {border: 1px solid #e9e9e9}
 
 .contact-us .contact-platforms > :first-child, .contact-us .contact-info > :first-child {
     background-color: #2d3e50;
     color: #fcffff;
 }
-.contact-us .contact-platforms > :nth-child(2) {
-    width: 75%;
-}
-.contact-us .contact-platforms > :nth-child(3) {
-    border: 1px solid #e9e9e9;
-}
-.contact-us .contact-platforms > :nth-child(3) p {
-    font-size: 24px;
-}
+.contact-us .contact-platforms > :nth-child(2) {width: 75%}
+.contact-us .contact-platforms > :nth-child(3) {border: 1px solid #e9e9e9}
+.contact-us .contact-platforms > :nth-child(3) p {font-size: 24px}
 .contact-us .contact-platforms > :nth-child(3) span {
     color: #ff1a26;
     font-size: 26px;
     font-weight: 600;
 }
-.contact-us .contact-platforms .social-media a img {
-    height: 55px;
-}
-
+.contact-us .contact-platforms .social-media a img {height: 55px}
 .contact-us .contact-info input {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
     height: 65px;
 }
-.contact-us .contact-info textarea {
-    width: 95%;
-}
+.contact-us .contact-info textarea {width: 95%}
 .contact-us .contact-info button {
     color: #FFF;
     background-color: #2d3e50;
