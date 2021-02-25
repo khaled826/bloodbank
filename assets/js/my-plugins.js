@@ -37,6 +37,7 @@ $(document).ready(function () {
         loop:true,
         margin:10,
         responsiveClass:true,
+        dots:false,
         responsive:{
             0:{
                 items:1,
@@ -56,4 +57,29 @@ $(document).ready(function () {
         }
     })
 
+    $('.related-articles-owl-carousel').owlCarousel({
+        rtl: true,
+        loop:true,
+        margin:10,
+        responsiveClass:true,
+        dots:false,
+        responsive:{
+            0:{
+                items:1,
+                nav:true,
+                loop:true
+            },
+            600:{
+                items:2,
+                nav:true,
+                loop:true
+            },
+            1000:{
+                items:3,
+                nav:true,
+                loop:true
+            }
+        }
+    })
+    
 });

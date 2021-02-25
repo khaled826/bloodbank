@@ -118,12 +118,12 @@ body {
     background: #D6D6D6;
     display: block;
     backface-visibility: visible;
-    transition: all 2s ease;
+    transition: all .5s ease;
     border-radius: 30px;
 }
 
-.slogan .owl-dots .owl-dot span:focus, .owl-dots .owl-dot span:active {
-    border: 1px solid #F00;
+.slogan .owl-dots .owl-dot span:focus, .owl-dots .owl-dot.active span {
+    border: 1px solid #e76369;
     outline: none;
 }
 /*Ending slogan*/
@@ -161,6 +161,21 @@ body {
     font-weight: 700;
 }
 
+.articles .card .card-img-top {
+    position: relative;
+}
+
+.articles .card .heart-icon {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: #bfbfc2;
+    background-color: #2d3e50;
+    border-radius: 50%;
+    width: 35px; height: 35px;
+    font-size: 20px;
+}
+
 .articles .card h5 {
     color: #b22428;
 }
@@ -179,9 +194,13 @@ body {
     display: inline-block;
     position: absolute;
     top: -20%;
-    right: 85%;
-    font-size: 45px;
+    left: 0%;
+    font-size: 60px;
     color: #b4b4b4;
+}
+
+.articles .owl-nav :nth-child(1) {
+    margin-right: 10px;
 }
 
 .articles .owl-nav button, .articles .owl-nav button:focus  {
@@ -191,7 +210,7 @@ body {
 /*Ending articles*/
 
 /*Starting donation*/
-.donation .container {
+.donation .my-background {
     background-color: #EEE;
 }
 
@@ -202,22 +221,69 @@ body {
     width: 150px;
 }
 
+.donation hr {
+    margin-top: -9px;
+}
+
+input::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+
+  input[list] {
+    border-radius: 50px;
+    position: relative;
+  }
+
+  .customized-input {
+      position: absolute;
+      top: -3%;
+      left: 8%;
+      height: 40px;
+      width: 45px;
+      border-right: 1px solid #ced4da;
+      line-height: 40px;
+  }
+
+  .donation .container > :nth-child(1) :nth-child(3) button,
+  .donation .container > :nth-child(1) :nth-child(3) button:focus {
+    border: none;
+    font-size: 20px;
+    background-color: #FFF;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-top: -5px;
+    outline: none;
+  }
+
+
 .donation .information {
     background-color: #FFF;
-    border-bottom-right-radius: 100px;
-    border-top-right-radius: 100px;
+    border-bottom-right-radius: 110px;
+    border-top-right-radius: 110px;
 }
 
 .donation .information .blood-type {
     border-radius: 50%;
     background-color: #EEE;
-    height: 100px;
-    width: 100px;
+    height: 110px;
+    width: 110px;
 }
 .donation .information .blood-type p {
     line-height: 90px;
     font-size: 40px;
     font-weight: 900;
+}
+
+.donation .information .case-name {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #495b6b;
+}
+
+.donation .information .case-name span {
+    color: #575757;
 }
 
 .donation .information .case-details a, .donation .information .case-details a:focus,
@@ -228,7 +294,7 @@ body {
     color: #faf7fc;
 }
 
-.information > a {
+.donation .container > a {
     width: 150px;
     color: #FFF;
     background-color: #2d3e50;

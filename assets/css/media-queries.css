@@ -60,6 +60,14 @@
     .personal-info > img {
         height: 80px;
     }
+
+    .articles-details .the-article .the-article-address h4 {
+        font-size: 18px;
+    }
+
+    .contact-us .contact-platforms > :nth-child(3) p {
+        font-size: 20px;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -88,6 +96,9 @@
     }
     .find-us .google-icon img, .find-us .ios-icon img {
         height: 68px;
+    }
+    .contact-us .contact-platforms > :nth-child(3) p {
+        font-size: 20px;
     }
 }
 
