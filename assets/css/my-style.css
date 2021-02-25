@@ -76,9 +76,9 @@ body {
 
 /*Starting slogan*/
 .slogan {
-    background: url(../imgs/header.jpg)no-repeat;
+    background: url(../imgs/header.jpg) center center no-repeat ;
     background-size: cover;
-    min-height: 350px;
+    min-height: 500px;
     position: relative;
 }
 
@@ -92,6 +92,7 @@ body {
     line-height: 40px;
     font-weight: 700;
     color: #3c4344;
+    font-size: 18px;
 }
 
 .slogan .my-text a {
@@ -103,7 +104,7 @@ body {
 
 .slogan .owl-dots {
     position: absolute;
-    top: 115%;
+    top: 130%;
     right: 50%;
 }
 
