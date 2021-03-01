@@ -52,7 +52,7 @@ body {font-family: 'Cairo', sans-serif}
 }
 .navbar-light .navbar-toggler {border: none}
 .navbar .mt-4, .my-4 {
-    margin-top: 2rem!important;
+    margin-top: .75rem!important;
 }
 /*Ending navbar*/
 
