@@ -27,6 +27,16 @@
     <!--my own media queries-->
     <link rel="stylesheet" href="assets/css/media-queries.css">
 
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="assets/js/jquery-1.12.4.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script>
+        $( function() {
+          $( "#datepicker" ).datepicker();
+        } );
+    </script>
+
 </head>
 <body>
     <!--Starting initial bar-->
@@ -82,18 +92,18 @@
                 </li>
                 <div class="mx-1 mt-3 d-none d-md-block" style="border-left:1px solid rgba(0, 0, 0, 0.062);height:50px"></div>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">طلبات التبرع</a>
+                    <a class="nav-link" href="donation-request.html">طلبات التبرع</a>
                 </li>
                 <div class="mx-1 mt-3 d-none d-md-block" style="border-left:1px solid rgba(0, 0, 0, 0.062);height:50px"></div>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">من نحن</a>
+                    <a class="nav-link" href="about-us.html">من نحن</a>
                 </li>
                 <div class="mx-1 mt-3 d-none d-md-block" style="border-left:1px solid rgba(0, 0, 0, 0.062);height:50px"></div>
                 <li class="nav-item">
                     <a class="nav-link" href="contact-us.html">اتصل بنا</a>
                 </li>
             </ul>
-            <a href="#" class="btn btn-lg create-account-navbar-edit d-block mt-4 ml-auto">طلب تبرع</a>
+            <a href="donation-request.html" class="btn btn-lg log-in-navbar-edit d-block my-5 my-lg-auto ml-auto">طلب تبرع</a>
         </div>
   
     </nav>
@@ -118,7 +128,7 @@
                         <div class="form-group">
                             <input type="text" class="form-control form-control-lg mx-auto my-5" placeholder="الاسم">
                             <input type="email" class="form-control form-control-lg mx-auto my-5" placeholder="البريد الإلكتروني">
-                            <input type="text" class="form-control form-control-lg mx-auto my-5" placeholder="تاريخ الميلاد">
+                            <input type="text" class="form-control form-control-lg mx-auto my-5" placeholder="تاريخ الميلاد" id="datepicker">
                             <input type="text" class="form-control form-control-lg mx-auto my-5" placeholder="فصيلة الدم">
                             
                             <input list="my-governorate" placeholder="المحافظة" class="form-control form-control-lg mx-auto my-5">

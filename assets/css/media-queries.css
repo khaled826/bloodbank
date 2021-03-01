@@ -17,7 +17,7 @@
         font-size: 16px;
     }
     
-    .about-us p {margin-top: 10px; margin-bottom: 10px}
+    .about-us p {margin-top: 10px; margin-bottom: 10px; font-size: 16px;}
     .whatsapp-number .rounded-pill {width: 250px; letter-spacing: 2px}
     .whatsapp-number .rounded-pill p {font-size: 16px}
 
@@ -27,17 +27,34 @@
 
     .registering-form button {font-size: 22px; width: 100px; height: 50px}
 
-    .log-in-navbar-edit {
+    /*.log-in-navbar-edit {
         height: 45px !important;
         width: 100px !important;
         font-size: 16px !important
-    }
+    }*/
 
     .personal-info > img {height: 80px}
 
     .articles-details .the-article .the-article-address h4 {font-size: 18px}
 
     .contact-us .contact-platforms > :nth-child(3) p {font-size: 20px}
+
+    .donation-details .donation-info .name {font-size: 18px}
+
+    .donation-request nav.my-pages {
+        width: 210px;
+    }
+    .donation-request .pagination .page-link {
+        margin-right: 2px;
+        margin-bottom: 3px;
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+        line-height: 35px;
+    }
+    .donation-request .pagination .svg-inline--fa {
+        font-size: 14px;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -48,10 +65,26 @@
 
     .slogan, .about-us  {background: none}
     
-    .about-us p {margin-top: 20px; margin-bottom: 20px}
+    .about-us p {margin-top: 20px; margin-bottom: 20px; font-size: 16px;}
     .whatsapp-number .my-theme {background-color: rgba(255, 255, 255, 0.651)}
     .find-us .google-icon img, .find-us .ios-icon img {height: 68px}
     .contact-us .contact-platforms > :nth-child(3) p {font-size: 20px}
+
+    .donation-details .donation-info .name {font-size: 18px}
+
+    .donation-request nav.my-pages {
+        width: 260px;
+    }
+    .donation-request .pagination .page-link {
+        margin-right: 2px;
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+        line-height: 35px;
+    }
+    .donation-request .pagination .svg-inline--fa {
+        font-size: 14px;
+    }
 }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -60,6 +93,18 @@
     
     .about-us p {margin-top: 20px; margin-bottom: 30px}
     .whatsapp-number .my-theme {background-color: rgba(255, 255, 255, 0.651)}
+
+    .donation-request nav.my-pages {
+        width: 260px;
+    }
+    .donation-request .pagination .page-link {
+        width: 60px;
+        height: 60px;
+        line-height: 50px;
+    }
+    .donation-request .pagination .svg-inline--fa {
+        font-size: 16px;
+    }
 }
 
 /* Large devices (desktops, 992px and up)*/
@@ -88,7 +133,7 @@
     }*/
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
     .navbar-light :nth-child(3) .navbar-nav .nav-link:active, .navbar-light :nth-child(3) .navbar-nav .nav-link:hover,
     .navbar-light :nth-child(3) .navbar-nav .nav-link:focus {border-bottom: none}
 }

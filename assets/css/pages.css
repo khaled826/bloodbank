@@ -3,7 +3,8 @@
 body {font-family: 'Cairo', sans-serif}
 
 /*Starting global initial bar*/
-.initial-bar {background-color: #2d3e50; color: #faf7fc}
+.initial-bar {background-color: #2d3e50; color: #faf7fc; min-height: 45px;}
+.initial-bar .holder .first {margin-top: 6px}
 .initial-bar .holder .first a {font-weight: 600; height: 40px}
 .initial-bar .holder .first > a:nth-child(1) {color: #b82a37}
 .initial-bar .holder .first > a:nth-child(2) {
@@ -11,7 +12,10 @@ body {font-family: 'Cairo', sans-serif}
     color: #596f87;
     font-size: 20px;
 }
-.initial-bar .holder .second a{color: #FFF; font-size: 20px}
+.initial-bar .holder .second a{color: #FFF; font-size: 24px}
+.initial-bar .create-account-initial-bar-edit {
+    margin-top: .50rem !important; margin-bottom: 10px;
+}
 .initial-bar .holder .third {color: #dee3eaea; line-height: 30px}
 .initial-bar .holder .third > div:nth-child(2){
     border-right: 1px solid #dee3eabb;
@@ -19,16 +23,20 @@ body {font-family: 'Cairo', sans-serif}
 /*Ending global initial bar*/
 
 /*Starting global navbar*/
+.navbar {padding-bottom: 0;}
+.navbar-expand-md ul.navbar-nav {
+    min-height: 65px;
+}
 .navbar-light .navbar-nav .nav-link {
-    font-size: 14px;
-    height: 80px;
-    line-height: 50px;
+    font-size: 18px;
+    height: 108px;
+    line-height: 86px;
     font-weight: 700;
 }
 .navbar-light :nth-child(3) .navbar-nav .nav-link:active, .navbar-light :nth-child(3) .navbar-nav .nav-link:hover,
 .navbar-light :nth-child(3) .navbar-nav .nav-link:focus {
     color: #e43438;
-    border-bottom: 2px solid #e43438;
+    border-bottom: 3px solid #e43438;
     font-weight: 700;
 }
 .navbar-light .btn {
@@ -38,6 +46,7 @@ body {font-family: 'Cairo', sans-serif}
     font-size: 12px;
     height: 30px;
     width: 80px;
+    margin-top: 10px;
 }
 .navbar > button:focus {outline: none}
 .navbar .sign-in {
@@ -97,6 +106,7 @@ footer .copyright .row div:nth-child(2) a {color: #c61e29}
 .registering-form form {border: 1px solid #eaeaea}
 .registering-form .form-control {max-width: 85%; height: 60px}
 .registering-form button {font-size: 25px; width: 30%; height: 65px}
+
 /*Ending registering form*/
 /***Ending register***/
 /********Ending create account page**********/
@@ -211,10 +221,11 @@ footer .copyright .row div:nth-child(2) a {color: #c61e29}
 /********Ending articles details page**********/
 
 /********Starting contact us page**********/
-.contact-us {
+.contact-us, .donation-details, .donation-request, .about-us {
     background-color: #fbfbfb;
     border-top: 1px solid #e4e6e5;
     box-shadow: inset 0 10px 10px #e4e6e5;
+    padding-top: 10px;
 }
 
 /*Starting breadcrumb*/
@@ -246,7 +257,7 @@ footer .copyright .row div:nth-child(2) a {color: #c61e29}
     margin-right: auto;
     height: 65px;
 }
-.contact-us .contact-info textarea {width: 95%}
+.contact-us .contact-info textarea {width: 95%; max-height: 200px; min-height: 70px; overflow: auto;}
 .contact-us .contact-info button {
     color: #FFF;
     background-color: #2d3e50;
@@ -255,5 +266,139 @@ footer .copyright .row div:nth-child(2) a {color: #c61e29}
     font-size: 22px;
     font-weight: 600;
 }
-
 /********Ending contact us page**********/
+
+/********starting donation details page**********/
+/*Starting breadcrumb*/
+/*.donation-details */.breadcrumb {background-color: #FFF; border: 1px solid #eaeaea}
+/*.donation-details */.breadcrumb .customized-breadcrumb-item a {color: #bdbdbd; font-size: 19px}
+.breadcrumb .breadcrumb-item.active {font-size: 18px}
+/*Ending breadcrumb*/
+
+.donation-details .donation-info {border: 1px solid #eaeaea; background-color: #FFF}
+.donation-details .donation-info .name {border: 1px solid #efefef; font-size: 23px}
+.donation-details .donation-info .name :nth-child(1) {
+    background-color: #f4f4f4;
+    width: 47%;
+    border-left: 1px solid #efefef;
+}
+.donation-details .donation-info .name :nth-child(2) {
+    width: 50%;
+    background-color: #fbfbfb;
+}
+.donation-details .donation-info .hospital-add :nth-child(1) {width: 240px}
+.donation-details .donation-info .hospital-add :nth-child(2) {width: auto}
+.donation-details .donation-info a {
+    width: 250px;
+    background-color: #2d3e50;
+    color: #fffeff;
+    height: 75px;
+    font-size: 24px;
+    line-height: 65px;
+    text-decoration: none;
+    border: 1px solid #2d3e50;
+}
+.donation-details .donation-info a:hover {
+    background-color: #fffeff;
+    color: #2d3e50;
+    transition: all .5s ease;
+}
+.donation-details .donation-info p {
+    border: 1px solid #eaeaea;
+    font-size: 22px;
+    line-height: 50px;
+}
+/********Ending donation details page**********/
+
+/********Stating donation request page**********/
+
+/*Starting donation*/
+.donation .my-background {background-color: #EEE; border: 1px solid #e1e1e1;}
+.donation h3 {color: #a80d14; font-weight: 600; border-bottom: 2px solid #a80d14; width: 150px}
+.donation hr {margin-top: -9px}
+input::-webkit-calendar-picker-indicator {display: none}
+  input[list] {border-radius: 50px; position: relative}
+  .customized-input {
+      position: absolute;
+      top: -3%;
+      left: 8%;
+      height: 40px;
+      width: 45px;
+      border-right: 1px solid #ced4da;
+      line-height: 40px;
+  }
+  .donation .container > :nth-child(1) :nth-child(3) button,
+  .donation .container > :nth-child(1) :nth-child(3) button:focus {
+    border: none;
+    font-size: 20px;
+    background-color: #FFF;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-top: -5px;
+    outline: none;
+  }
+.donation .information {
+    background-color: #FFF;
+    border-bottom-right-radius: 110px;
+    border-top-right-radius: 110px;
+}
+.donation .information .blood-type {
+    border-radius: 50%;
+    background-color: #EEE;
+    height: 110px;
+    width: 110px;
+}
+.donation .information .blood-type p {line-height: 90px; font-size: 40px; font-weight: 900}
+.donation .information .case-name {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #495b6b;
+}
+.donation .information .case-name span {color: #575757}
+.donation .information .case-details a, .donation .information .case-details a:focus,
+.donation .information .case-details a:active {
+    width: 235px;
+    height: 80px;
+    background-color: #EEE;
+    box-shadow: none;
+    color: #282828;
+    line-height: 60px;
+    font-weight: 600;
+}
+.donation .information .case-details a:hover {
+    color: #EEE;
+    background-color: #2d3e50;
+    transition: all .5s ease;
+}
+/*Ending donation*/
+
+/*Starting pagination*/
+.donation-request nav.my-pages {
+    width: 605px;
+}
+.donation-request .pagination .page-link {
+    margin-right: 5px;
+    width: 70px;
+    height: 70px;
+    font-size: 24px;
+    line-height: 50px;
+    color: #000000;
+}
+.donation-request .pagination .page-link:hover {
+    background-color: #2d3e50;
+    color: #fffef8;
+}
+.donation-request .pagination .svg-inline--fa {
+    font-size: 18px;
+}
+/*Ending pagination*/
+/********Ending donation request page**********/
+
+/********Starting about us page**********/
+.about-us p {
+    color: #292929;
+    line-height: 32px;
+}
+/********Ending about us page**********/
