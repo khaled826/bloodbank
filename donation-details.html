@@ -56,47 +56,54 @@
         <!--Ending initial bar-->
 
         <!--Starting navbar-->
-        <nav class="navbar navbar-expand-md navbar-light bg-light container d-flex align-content-start flex-wrap">
-            <a class="navbar-brand mb-2" href="index.html">
-                <img src="assets/imgs/logo.png" alt="blood bank logo" height="58px">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f9f9f9 !important;">
+        <div class="container">
+            <a class="navbar-brand py-1" href="index.html">
+                <img src="assets/imgs/logo.png" alt="blood bank logo">
             </a>
 
-            <button class="navbar-toggler mb-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
             </button>
-
+    
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                <ul class="navbar-nav flex-shrink-0">
+    
+                <ul class="navbar-nav text-right">
                     <li class="nav-item">
                     <a class="nav-link" href="index.html">الرئيسية</a>
                     </li>
-                    <div class="mx-1 mt-3 d-none d-md-block" style="border-left:1px solid rgba(0, 0, 0, 0.062);height:50px"></div>
+                    <div class=" d-none d-lg-block" style="border-left:1px solid rgba(0, 0, 0, 0.062);height:45px; margin-top: 2.5rem"></div>
                     <li class="nav-item">
                     <a class="nav-link" href="#">عن بنك الدم</a>
                     </li>
-                    <div class="mx-1 mt-3 d-none d-md-block" style="border-left:1px solid rgba(0, 0, 0, 0.062);height:50px"></div>
+                    <div class=" d-none d-lg-block" style="border-left:1px solid rgba(0, 0, 0, 0.062);height:45px; margin-top: 2.5rem"></div>
                     <li class="nav-item">
                         <a class="nav-link" href="#">المقالات</a>
                     </li>
-                    <div class="mx-1 mt-3 d-none d-md-block" style="border-left:1px solid rgba(0, 0, 0, 0.062);height:50px"></div>
-                    <li class="nav-item">
-                        <a class="nav-link" href="donation-request.html">طلبات التبرع</a>
+                    <div class=" d-none d-lg-block" style="border-left:1px solid rgba(0, 0, 0, 0.062);height:45px; margin-top: 2.5rem"></div>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="donation-request.html">طلبات التبرع <span class="sr-only">(current)</span></a>
                     </li>
-                    <div class="mx-1 mt-3 d-none d-md-block" style="border-left:1px solid rgba(0, 0, 0, 0.062);height:50px"></div>
+                    <div class=" d-none d-lg-block" style="border-left:1px solid rgba(0, 0, 0, 0.062);height:45px; margin-top: 2.5rem"></div>
                     <li class="nav-item">
                         <a class="nav-link" href="about-us.html">من نحن</a>
                     </li>
-                    <div class="mx-1 mt-3 d-none d-md-block" style="border-left:1px solid rgba(0, 0, 0, 0.062);height:50px"></div>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="contact-us.html">اتصل بنا <span class="sr-only">(current)</span></a>
+                    <div class=" d-none d-lg-block" style="border-left:1px solid rgba(0, 0, 0, 0.062);height:45px; margin-top: 2.5rem"></div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">اتصل بنا</a>
                     </li>
                 </ul>
-                <a href="donation-request.html" class="btn btn-lg log-in-navbar-edit d-block my-5 my-lg-auto ml-auto">طلب تبرع</a>
-            </div>   
+                <a href="donation-request.html" class="btn btn-lg navbar-override-global d-block my-3 my-lg-auto ml-auto mr-2 pr-5 text-right position-relative">
+                    <img class="blood-icon" src="assets/imgs/blood-donation.png">
+                    طلب تبرع
+                </a>
+                
+            </div>
+            
+        </div>
 
-        </nav>
-        <!--Ending navbar-->
+    </nav>
+    <!--Ending navbar-->
 
         <!--Starting donation details-->
         <section class="donation-details">
@@ -115,45 +122,45 @@
                 <div class="donation-info p-2">
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="name my-3">
-                                <div class="d-inline-block p-3">الاسم</div>
-                                <div class="d-inline-block p-3">احمد محمد</div>
+                            <div class="name my-3 d-flex flex-wrap">
+                                    <div class="d-inline-block p-3 ml-1 ml-md-0">الاسم</div>
+                                <div class="d-inline-block p-3 ml-1 ml-md-0">&nbsp;&nbsp;احمد محمد</div>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="name my-3">
-                                <div class="d-inline-block p-3">فصيلة الدم</div>
-                                <div class="d-inline-block p-3">A+</div>
+                            <div class="name my-3 d-flex flex-wrap">
+                                <div class="d-inline-block p-3 ml-1 ml-md-0">فصيلة الدم</div>
+                                <div class="d-inline-block p-3 ml-1 ml-md-0">A+</div>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="name my-3">
-                                <div class="d-inline-block p-3">العمر</div>
-                                <div class="d-inline-block p-3">28 عام</div>
+                            <div class="name my-3 d-flex flex-wrap">
+                                <div class="d-inline-block p-3 ml-1 ml-md-0">العمر</div>
+                                <div class="d-inline-block p-3 ml-1 ml-md-0">28 عام</div>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="name my-3">
-                                <div class="d-inline-block p-3">عدد الاكياس المطلوبة</div>
-                                <div class="d-inline-block p-3">3 اكياس</div>
+                            <div class="name my-3 d-flex flex-wrap">
+                                <div class="d-inline-block p-3 ml-1 ml-md-0">عدد الاكياس المطلوبة</div>
+                                <div class="d-inline-block p-3 ml-1 ml-md-0">3 اكياس</div>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="name my-3">
-                                <div class="d-inline-block p-3">المشفى</div>
-                                <div class="d-inline-block p-3">الخير الدولية</div>
+                            <div class="name my-3 d-flex flex-wrap">
+                                <div class="d-inline-block p-3 ml-1 ml-md-0">المشفى</div>
+                                <div class="d-inline-block p-3 ml-1 ml-md-0">الخير الدولية</div>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="name my-3">
-                                <div class="d-inline-block p-3">رقم الجوال</div>
-                                <div class="d-inline-block p-3">0245487878</div>
+                            <div class="name my-3 d-flex flex-wrap">
+                                <div class="d-inline-block p-3 ml-1 ml-md-0">رقم الجوال</div>
+                                <div class="d-inline-block p-3 ml-1 ml-md-0">0245487878</div>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="hospital-add name my-3">
-                                <div class="d-inline-block p-3">عنوان المشفى</div>
-                                <div class="d-inline-block p-3">المنصورة-شارع عبد العزيز بجوار المرور المتفرع من الدولي</div>
+                            <div class="hospital-add name my-3 d-flex flex-wrap">
+                                <div class="d-inline-block p-3 ml-1 ml-md-0">عنوان المشفى</div>
+                                <div class="d-inline-block p-3 ml-1 ml-md-0">المنصورة-شارع عبد العزيز بجوار المرور المتفرع من الدولي</div>
                             </div>
                         </div>
                     </div>
@@ -163,7 +170,7 @@
                         بعض أنواع السرطانات، لذلك يُنصح بالتقليل من تناول الأطعمة الغنية بالسعرات الحرارية مثل؛ الدهون، والأطعمة المقلية، وصفار البيض، والحلويات، بينما يجب الإكثار من الأطعمة قليلة 
                     </p>
                     <div class="my-map">
-                        My map
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3451.2798530013115!2d31.311307715116754!3d30.11480458185669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145815e56cfd8793%3A0x56b61fc4cfac2021!2z2KfYqNiv2KfYuSDYqtmDINmE2YTYqNix2YXYrNmK2KfYqg!5e0!3m2!1sen!2seg!4v1614764981699!5m2!1sen!2seg" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
             <!--Ending donation info-->

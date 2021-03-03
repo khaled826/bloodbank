@@ -22,40 +22,61 @@ body {font-family: 'Cairo', sans-serif}
 }
 /*Ending global initial bar*/
 
-/*Starting global navbar*/
-.navbar {padding-bottom: 0;}
-.navbar-expand-md ul.navbar-nav {
-    min-height: 65px;
+/*Starting navbar*/
+.navbar {padding: 0;}
+
+nav .navbar-brand img {
+    height:90px
 }
-.navbar-light .navbar-nav .nav-link {
+
+.navbar-light .navbar-nav .nav-item {
     font-size: 18px;
-    height: 108px;
-    line-height: 86px;
+    line-height: 80px;
     font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
 }
-.navbar-light :nth-child(3) .navbar-nav .nav-link:active, .navbar-light :nth-child(3) .navbar-nav .nav-link:hover,
-.navbar-light :nth-child(3) .navbar-nav .nav-link:focus {
+
+.navbar-light ul.navbar-nav .active .nav-link {
+    color: #e43438;
+}
+
+.navbar-light .navbar-nav .nav-item:hover,
+.navbar-light ul.navbar-nav li.active {
     color: #e43438;
     border-bottom: 3px solid #e43438;
     font-weight: 700;
 }
-.navbar-light .btn {
+
+.navbar-light ul.navbar-nav li.pseudo-active,
+.navbar-light ul.navbar-nav li.pseudo-active {
+    border-bottom: 3px solid #FFF;
+}
+
+.navbar-light .navbar-nav .nav-item:hover .nav-link {
+    color: #e43438;
+}
+
+.navbar-light .navbar-toggler {border: none; outline: none;}
+
+.navbar-override-global, .navbar-override-global:hover {
+    height: 55px !important;
+    width: 208px !important;
+    font-size: 18px !important;
     background-color: #2d3e50;
-    border-color: #2d3e50;
-    color: #faf7fc;
-    font-size: 12px;
-    height: 30px;
-    width: 80px;
-    margin-top: 10px;
+    color: #FFF
 }
-.navbar > button:focus {outline: none}
-.navbar .sign-in {
-    color: #47525d;
-    font-weight: 700;
-    font-size: 12px;
-    text-decoration: underline;
+
+.blood-icon {
+    height: 70px;
+    z-index: 2;
+    position: absolute;
+    top: -35%;
+    right: 1%;
 }
-.navbar-light .navbar-toggler {border: none}
 /*Ending global navbar*/
 
 /*Starting global footer*/
@@ -98,13 +119,33 @@ footer .copyright .row div:nth-child(2) a {color: #c61e29}
 .create-account-initial-bar-edit > :first-child a {color: #f7ffff}
 
 .create-account-initial-bar-edit > :nth-child(2) a {color: #fead38}
-.create-account-navbar-edit {
-    height: 55px !important;
-    width: 200px !important;
-    font-size: 18px !important
-}
+
 .registering-form form {border: 1px solid #eaeaea}
-.registering-form .form-control {max-width: 85%; height: 60px}
+.registering-form .form-group :nth-child(3),
+.registering-form .form-group > :nth-child(5),
+.registering-form .form-group > :nth-child(6),
+.registering-form .form-group > :nth-child(8) {
+    position: relative;
+}
+.registering-form .form-group :nth-child(3) .fa-2x,
+.registering-form .form-group :nth-child(8) .fa-2x {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+.create-account-select {
+    appearance: none;
+    position: relative;
+}
+.registering-form .form-group > :nth-child(5) :nth-child(2),
+.registering-form .form-group > :nth-child(6) :nth-child(2) {
+    position: absolute;
+    top: 35%;
+    left: 11%;
+    font-size: 22px;
+}
+
+.registering-form .form-control {max-width: 85%; height: 60px; font-size: 20px;}
 .registering-form button {font-size: 25px; width: 30%; height: 65px}
 
 /*Ending registering form*/
@@ -120,11 +161,7 @@ footer .copyright .row div:nth-child(2) a {color: #c61e29}
 }
 .log-in-initial-bar-edit > :first-child a {color: #f7ffff}
 .log-in-initial-bar-edit > :nth-child(2) a {color: #fead38}
-.log-in-navbar-edit {
-    height: 55px !important;
-    width: 200px !important;
-    font-size: 18px !important
-}
+
 /*Starting log in*/
 .log-in .breadcrumb {
     background-color: #FFF;
@@ -195,6 +232,8 @@ footer .copyright .row div:nth-child(2) a {color: #c61e29}
     font-size: 20px;
 }
 .related-articles .card h5 {color: #b22428}
+.related-articles hr {margin-top: -9px; margin-bottom: 40px;}
+.related-articles .card {padding: 2px;}
 .related-articles .card a {
     width: 140px;
     color: #faf7fc;
@@ -207,9 +246,9 @@ footer .copyright .row div:nth-child(2) a {color: #c61e29}
 .related-articles .owl-nav {
     display: inline-block;
     position: absolute;
-    top: -20%;
+    top: -27%;
     left: 0%;
-    font-size: 60px;
+    font-size: 65px;
     color: #b4b4b4;
 }
 .related-articles .owl-nav :nth-child(1) {margin-right: 10px}
@@ -276,18 +315,20 @@ footer .copyright .row div:nth-child(2) a {color: #c61e29}
 /*Ending breadcrumb*/
 
 .donation-details .donation-info {border: 1px solid #eaeaea; background-color: #FFF}
-.donation-details .donation-info .name {border: 1px solid #efefef; font-size: 23px}
+.donation-details .donation-info .name {border: 1px solid #efefef; font-size: 23px;}
 .donation-details .donation-info .name :nth-child(1) {
-    background-color: #f4f4f4;
-    width: 47%;
-    border-left: 1px solid #efefef;
+    background-color: /*#f4f4f4;*/ #9e9e9e;
+    width: 50%;
+    border-left: 1px solid #292929;
+    /*float: right;*/
 }
 .donation-details .donation-info .name :nth-child(2) {
     width: 50%;
-    background-color: #fbfbfb;
+    background-color: /*#fbfbfb;*/ #CCC;
+    /*float: right;*/
 }
-.donation-details .donation-info .hospital-add :nth-child(1) {width: 240px}
-.donation-details .donation-info .hospital-add :nth-child(2) {width: auto}
+.donation-details .donation-info .hospital-add :nth-child(1) {width: 264px}
+.donation-details .donation-info .hospital-add :nth-child(2) {width: 826px}
 .donation-details .donation-info a {
     width: 250px;
     background-color: #2d3e50;
@@ -316,8 +357,11 @@ footer .copyright .row div:nth-child(2) a {color: #c61e29}
 .donation .my-background {background-color: #EEE; border: 1px solid #e1e1e1;}
 .donation h3 {color: #a80d14; font-weight: 600; border-bottom: 2px solid #a80d14; width: 150px}
 .donation hr {margin-top: -9px}
-input::-webkit-calendar-picker-indicator {display: none}
-  input[list] {border-radius: 50px; position: relative}
+select.donation-select {
+    appearance: none;
+    border-radius: 1.25rem !important;
+    position: relative
+}
   .customized-input {
       position: absolute;
       top: -3%;
@@ -346,10 +390,10 @@ input::-webkit-calendar-picker-indicator {display: none}
 .donation .information .blood-type {
     border-radius: 50%;
     background-color: #EEE;
-    height: 110px;
-    width: 110px;
+    height: 160px;
+    width: 160px;
 }
-.donation .information .blood-type p {line-height: 90px; font-size: 40px; font-weight: 900}
+.donation .information .blood-type h2 {line-height: 134px; font-size: 50px; font-weight: 900}
 .donation .information .case-name {
     line-height: 18px;
     font-size: 18px;

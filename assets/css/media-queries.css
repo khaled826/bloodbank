@@ -6,24 +6,40 @@
     }
 
     .initial-bar .holder .third > div:nth-child(2){border-right:none}
-    .navbar-light .navbar-nav .nav-link {height: 40px; text-align: left}
-
-    .slogan, .about-us {background: none}
     
-    .slogan p {
-        max-width: 300px;
-        line-height: 30px;
-        font-weight: 700;
-        font-size: 16px;
+    nav .navbar-brand img {
+        height:65px
     }
-    
-    .about-us p {margin-top: 10px; margin-bottom: 10px; font-size: 16px;}
-    .whatsapp-number .rounded-pill {width: 250px; letter-spacing: 2px}
-    .whatsapp-number .rounded-pill p {font-size: 16px}
+    .navbar-light .navbar-nav .nav-item,
+    .navbar-light .navbar-nav .nav-item:hover,
+    .navbar-light ul.navbar-nav li.active {
+        line-height: normal;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-left: 10px;
+        border-bottom: none;
+    }
 
+    .slogan {background: url(../imgs/BG1.jpg); text-align: center;}
+    .slogan p {max-width: none;}
+    
+
+    .about-us {background: none}
+    .about-us p {margin-top: 30px; margin-bottom: 10px; font-size: 16px;}
+
+    .donation .information {border-bottom-right-radius: unset; border-top-right-radius: unset}
+    .donation .information .blood-type {margin-right: auto; margin-left: auto}
+    .donation .information .case-name {text-align: center}
+    
+
+    .whatsapp-number .rounded-pill {width: 250px; height: 64px; letter-spacing: 2px}
+    .whatsapp-number .rounded-pill p {font-size: 16px; margin-right: 10px;}
+    .whatsapp-number .rounded-pill img {height: 80px;}
     .whatsapp-number .my-theme {background-color: rgba(255, 255, 255, 0.651)}
 
     .find-us .google-icon img, .find-us .ios-icon img {height: 68px}
+
+    .related-articles .owl-nav {display: none;}
 
     .registering-form button {font-size: 22px; width: 100px; height: 50px}
 
@@ -40,6 +56,9 @@
     .contact-us .contact-platforms > :nth-child(3) p {font-size: 20px}
 
     .donation-details .donation-info .name {font-size: 18px}
+    .donation-details .donation-info .name :nth-child(1), .donation-details .donation-info .name :nth-child(2) {
+        width: 100%;
+    }
 
     .donation-request nav.my-pages {
         width: 210px;
@@ -61,11 +80,26 @@
 @media (min-width: 576px) and (max-width: 767.98px) {
     .initial-bar .holder .second {margin-right: 22px!important; margin-left: 22px}
 
-    .navbar-light .navbar-nav .nav-link {height: 40px; text-align: left; display: block}
+    .navbar-light .navbar-nav .nav-item,
+    .navbar-light .navbar-nav .nav-item:hover,
+    .navbar-light ul.navbar-nav li.active {
+        line-height: normal;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-left: 10px;
+        border-bottom: none;
+    }
 
-    .slogan, .about-us  {background: none}
-    
+    .slogan {background: url(../imgs/BG1.jpg); text-align: center;}
+    .slogan p {max-width: none;}
+
+    .about-us  {background: none}
     .about-us p {margin-top: 20px; margin-bottom: 20px; font-size: 16px;}
+
+    .donation .information {border-bottom-right-radius: unset; border-top-right-radius: unset}
+    .donation .information .blood-type {margin-right: auto; margin-left: auto}
+    .donation .information .case-name {text-align: center}
+
     .whatsapp-number .my-theme {background-color: rgba(255, 255, 255, 0.651)}
     .find-us .google-icon img, .find-us .ios-icon img {height: 68px}
     .contact-us .contact-platforms > :nth-child(3) p {font-size: 20px}
@@ -89,9 +123,26 @@
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .slogan, .about-us {background: none}
-    
-    .about-us p {margin-top: 20px; margin-bottom: 30px}
+    .navbar-light .navbar-nav .nav-item,
+    .navbar-light .navbar-nav .nav-item:hover,
+    .navbar-light ul.navbar-nav li.active {
+        line-height: normal;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-left: 10px;
+        border-bottom: none;
+    }
+
+    .slogan {background: url(../imgs/BG1.jpg); text-align: center;}
+    .slogan p {max-width: none;}
+
+    .about-us {background: none}
+    .about-us p {margin-top: 30px; margin-bottom: 20px;}
+
+    .donation .information {border-bottom-right-radius: unset; border-top-right-radius: unset}
+    .donation .information .blood-type {margin-right: auto; margin-left: auto}
+    .donation .information .case-name {text-align: center}
+
     .whatsapp-number .my-theme {background-color: rgba(255, 255, 255, 0.651)}
 
     .donation-request nav.my-pages {
@@ -109,7 +160,17 @@
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    
+    .navbar .container .navbar-nav .nav-item {
+        font-size: 14px;
+        padding: 0;
+        line-height: 102px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .navbar-light .btn {width: 85px; margin-right: 10px;}
+
+    .about-us {background: none}
+    .about-us p {margin-top: 30px; margin-bottom: 20px;}
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
@@ -133,7 +194,7 @@
     }*/
 }
 
-@media (max-width: 1199px) {
-    .navbar-light :nth-child(3) .navbar-nav .nav-link:active, .navbar-light :nth-child(3) .navbar-nav .nav-link:hover,
-    .navbar-light :nth-child(3) .navbar-nav .nav-link:focus {border-bottom: none}
+@media (max-width: 1200px) {
+    
+    
 }

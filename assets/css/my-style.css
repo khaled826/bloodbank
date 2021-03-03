@@ -11,57 +11,73 @@ body {font-family: 'Cairo', sans-serif}
     color: #596f87;
     font-size: 20px;
 }
-.initial-bar .holder .second a {color: #FFF; font-size: 24px}
+.initial-bar .holder .second a {color: #FFF; font-size: 24px; margin-left: 5px;}
 .initial-bar .holder .third {color: #dee3eaea; line-height: 45px; font-size: 20px}
 .initial-bar .holder .third > div:nth-child(2){border-right: 1px solid #dee3eabb}
 /*Ending initial bar*/
 
 /*Starting navbar*/
-.navbar {padding-bottom: 0;}
-.navbar-expand-md ul.navbar-nav {
-    min-height: 104px;
+.navbar {padding: 0;}
+
+nav .navbar-brand img {
+    height:90px
 }
-.navbar-light .navbar-nav .nav-link {
+
+.navbar-light .navbar-nav .nav-item {
     font-size: 18px;
-    height: 106px;
     line-height: 80px;
     font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
 }
-.navbar-light :nth-child(3) .navbar-nav .nav-link:active, .navbar-light :nth-child(3) .navbar-nav .nav-link:hover,
-.navbar-light :nth-child(3) .navbar-nav .nav-link:focus {
+
+.navbar-light ul.navbar-nav .active .nav-link {
+    color: #e43438;
+}
+
+.navbar-light .navbar-nav .nav-item:hover,
+.navbar-light ul.navbar-nav li.active {
     color: #e43438;
     border-bottom: 3px solid #e43438;
     font-weight: 700;
 }
 
+.navbar-light .navbar-nav .nav-item:hover .nav-link {
+    color: #e43438;
+}
+
+.navbar-light .navbar-toggler {border: none; outline: none;}
+
+.navbar .sign-in {
+    color: #47525d;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: underline;
+    /*margin-right: 60px;*/
+    width: 120px;
+}
 .navbar-light .btn {
     background-color: #2d3e50;
     border-color: #2d3e50;
     color: #faf7fc;
     font-size: 16px;
-    height: 45px;
-    width: 140px;
+    margin-right: 15px;
+    margin-left: 8px;
+    width: 120px;
+    padding: 8px
 }
-.navbar > button:focus {outline: none}
-.navbar .sign-in {
-    color: #47525d;
-    font-weight: 700;
-    font-size: 12px;
-    text-decoration: underline;
-    /*margin-top: 2rem !important;*/
-}
-.navbar-light .navbar-toggler {border: none}
-.navbar .mt-4, .my-4 {
-    margin-top: .75rem!important;
-}
-/*Ending navbar*/
 
+/*Ending navbar*/
 /*Starting slogan*/
 .slogan {
-    background: url(../imgs/header.jpg) center center no-repeat ;
+    background: url(../imgs/header.jpg) top center no-repeat ;
     background-size: cover;
     min-height: 500px;
     position: relative;
+    
 }
 .slogan h4 {font-weight: 700; color: #a60e14}
 .slogan p {
@@ -70,6 +86,7 @@ body {font-family: 'Cairo', sans-serif}
     font-weight: 700;
     color: #3c4344;
     font-size: 18px;
+    
 }
 .slogan .my-text a {width: 140px; color: #faf7fc; background-color: #2d3e50; border-color: #2d3e50}
 .slogan .owl-dots {position: absolute; top: 130%; right: 50%}
@@ -93,19 +110,23 @@ body {font-family: 'Cairo', sans-serif}
 /*Starting about-us*/
 .about-us {background: url(../imgs/about2.png) no-repeat; background-size: cover}
 .about-us p {
-    line-height: 35px;
+    line-height: 50px;
     font-size: 20px;
     font-weight: 700;
     color: #3c4344;
     margin-top: 133px;
     margin-bottom: 135px;
+    max-width: 600px;
 }
 .about-us p span {color: #b12b2e}
 /*Ending about-us*/
 
 /*Starting articles*/
-.articles {position: relative}
+/*.articles {position: relative}*/
+.articles {margin-top: 5rem !important;}
 .articles h3 {color: #ac191f; border-bottom: 2px solid #ac191f; width: 120px; font-weight: 700}
+.articles hr {margin-bottom: -67px}
+.articles .card {padding: 2px;}
 .articles .card .card-img-top {position: relative}
 .articles .card .heart-icon {
     position: absolute;
@@ -115,7 +136,7 @@ body {font-family: 'Cairo', sans-serif}
     background-color: #2d3e50;
     border-radius: 50%;
     width: 35px; height: 35px;
-    font-size: 20px;
+    font-size: 20px
 }
 .articles .card h5 {color: #b22428}
 .articles .card a {
@@ -130,7 +151,7 @@ body {font-family: 'Cairo', sans-serif}
 .articles .owl-nav {
     display: inline-block;
     position: absolute;
-    top: -20%;
+    top: -23%;
     left: 0%;
     font-size: 60px;
     color: #b4b4b4;
@@ -143,12 +164,16 @@ body {font-family: 'Cairo', sans-serif}
 .donation .my-background {background-color: #EEE}
 .donation h3 {color: #a80d14; font-weight: 600; border-bottom: 2px solid #a80d14; width: 150px}
 .donation hr {margin-top: -9px}
-input::-webkit-calendar-picker-indicator {display: none}
-  input[list] {border-radius: 50px; position: relative}
+select {
+    appearance: none;
+    border-radius: 1.25rem !important;
+    position: relative
+}
+
   .customized-input {
       position: absolute;
       top: -3%;
-      left: 8%;
+      left: 7%;
       height: 40px;
       width: 45px;
       border-right: 1px solid #ced4da;
@@ -173,10 +198,10 @@ input::-webkit-calendar-picker-indicator {display: none}
 .donation .information .blood-type {
     border-radius: 50%;
     background-color: #EEE;
-    height: 110px;
-    width: 110px;
+    height: 160px;
+    width: 160px;
 }
-.donation .information .blood-type p {line-height: 90px; font-size: 40px; font-weight: 900}
+.donation .information .blood-type h2 {line-height: 134px; font-size: 50px; font-weight: 900}
 .donation .information .case-name {
     line-height: 18px;
     font-size: 18px;
@@ -199,6 +224,8 @@ input::-webkit-calendar-picker-indicator {display: none}
     background-color: #2d3e50;
     transition: all .5s ease;
 }
+
+                    /*المزيد*/
 .donation .container > a {
     width: 210px;
     color: #FFF;
@@ -219,13 +246,21 @@ input::-webkit-calendar-picker-indicator {display: none}
 /*Starting whatsapp number*/
 .whatsapp-number {background: url(../imgs/call.jpg) no-repeat; background-size: cover}
 .whatsapp-number h3 {color: #9c2829; border-bottom: 2px solid #9c2829; width: 100px}
-.whatsapp-number p {font-size: 20px; font-weight: 700; display: inline-block}
+.whatsapp-number p {font-size: 20px; font-weight: 700; margin-left: auto; margin-right: 35px;}
 .whatsapp-number .rounded-pill {
-    height: 80px;
+    height: 82px;
     width: 350px;
     background-color: #3ab54a;
     color: #f8fbf8;
     letter-spacing: 4px;
+    position: relative;
+    text-decoration: none;
+}
+.whatsapp-number .rounded-pill img {
+    position: absolute;
+    top: -5%;
+    left: -6%;
+    height: 95px;
 }
 /*Ending whatsapp number*/
 

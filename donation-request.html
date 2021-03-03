@@ -56,51 +56,58 @@
         <!--Ending initial bar-->
 
         <!--Starting navbar-->
-        <nav class="navbar navbar-expand-md navbar-light bg-light container d-flex align-content-start flex-wrap">
-            <a class="navbar-brand mb-2" href="index.html">
-                <img src="assets/imgs/logo.png" alt="blood bank logo" height="58px">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f9f9f9 !important;">
+        <div class="container">
+            <a class="navbar-brand py-1" href="index.html">
+                <img src="assets/imgs/logo.png" alt="blood bank logo">
             </a>
 
-            <button class="navbar-toggler mb-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
             </button>
-
+    
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                <ul class="navbar-nav flex-shrink-0">
+    
+                <ul class="navbar-nav text-right">
                     <li class="nav-item">
                     <a class="nav-link" href="index.html">الرئيسية</a>
                     </li>
-                    <div class="mx-1 mt-3 d-none d-md-block" style="border-left:1px solid rgba(0, 0, 0, 0.062);height:50px"></div>
+                    <div class=" d-none d-lg-block" style="border-left:1px solid rgba(0, 0, 0, 0.062);height:45px; margin-top: 2.5rem"></div>
                     <li class="nav-item">
                     <a class="nav-link" href="#">عن بنك الدم</a>
                     </li>
-                    <div class="mx-1 mt-3 d-none d-md-block" style="border-left:1px solid rgba(0, 0, 0, 0.062);height:50px"></div>
+                    <div class=" d-none d-lg-block" style="border-left:1px solid rgba(0, 0, 0, 0.062);height:45px; margin-top: 2.5rem"></div>
                     <li class="nav-item">
                         <a class="nav-link" href="#">المقالات</a>
                     </li>
-                    <div class="mx-1 mt-3 d-none d-md-block" style="border-left:1px solid rgba(0, 0, 0, 0.062);height:50px"></div>
-                    <li class="nav-item">
-                        <a class="nav-link" href="donation-request.html">طلبات التبرع</a>
+                    <div class=" d-none d-lg-block" style="border-left:1px solid rgba(0, 0, 0, 0.062);height:45px; margin-top: 2.5rem"></div>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="donation-request.html">طلبات التبرع <span class="sr-only">(current)</span></a>
                     </li>
-                    <div class="mx-1 mt-3 d-none d-md-block" style="border-left:1px solid rgba(0, 0, 0, 0.062);height:50px"></div>
+                    <div class=" d-none d-lg-block" style="border-left:1px solid rgba(0, 0, 0, 0.062);height:45px; margin-top: 2.5rem"></div>
                     <li class="nav-item">
                         <a class="nav-link" href="about-us.html">من نحن</a>
                     </li>
-                    <div class="mx-1 mt-3 d-none d-md-block" style="border-left:1px solid rgba(0, 0, 0, 0.062);height:50px"></div>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="contact-us.html">اتصل بنا <span class="sr-only">(current)</span></a>
+                    <div class=" d-none d-lg-block" style="border-left:1px solid rgba(0, 0, 0, 0.062);height:45px; margin-top: 2.5rem"></div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">اتصل بنا</a>
                     </li>
                 </ul>
-                <a href="donation-request.html" class="btn btn-lg log-in-navbar-edit d-block my-5 my-lg-auto ml-auto">طلب تبرع</a>
-            </div>   
+                <a href="donation-request.html" class="btn btn-lg navbar-override-global d-block my-3 my-lg-auto ml-auto mr-2 pr-5 text-right position-relative">
+                    <img class="blood-icon" src="assets/imgs/blood-donation.png">
+                    طلب تبرع
+                </a>
+                
+            </div>
+            
+        </div>
 
-        </nav>
-        <!--Ending navbar-->
+    </nav>
+    <!--Ending navbar-->
 
         <!--Starting donation request-->
         <section class="donation-request">
-            <div class="container">
+            <div class="container-md">
                 <!--Starting breadcrumb-->
                 <nav aria-label="breadcrumb" class="my-3">
                     <ol class="breadcrumb">
@@ -111,35 +118,35 @@
             <!--Ending breadcrumb-->
                 <!--Starting donation-->
         <div class="donation my-4">
-            <h3 class="mt-5 text-center mx-auto pb-2">طلبات التبرع</h3>
-            <hr>
+        <h3 class="mt-5 text-center mx-auto pb-2">طلبات التبرع</h3>
+        <hr>
         <div class="my-background">
             <div class="container pt-5">
                 <form name="info" method="GET">
                 <div class="row">
                   
-                    <div class="col-lg-4 offset-1">
-                        <input list="my-data" name="blood-type" placeholder="اختر فصيلة الدم" class="mb-2 form-control">
-                        <datalist id="my-data">
-                            <option value="B+">
-                            <option value="B+">
-                            <option value="B+">
-                            <option value="B+">
-                        </datalist>
+                    <div class="col-lg-4 offset-1 mb-3">
+                        <select class="form-control donation-select" name="blood-type">
+                            <option value="" disabled selected>اختر فصيلة الدم</option>
+                            <option value="B+">B+</option>
+                            <option value="BA+">A+</option>
+                            <option value="AB+">AB+</option>
+                            <option value="O-">O-</option>
+                        </select>
                         <div class="customized-input pl-3 pl-sm-4 pl-lg-3">
                             <i class="fas fa-chevron-down"></i>
                         </div>
                     </div>
                     
-                    <div class="col-lg-4 offset-1 mb-2">
+                    <div class="col-lg-4 offset-1 mb-3">
                         
-                        <input list="my-data-2" name="governorate" placeholder="اختر المدينة" class="mb-2 form-control">
-                        <datalist id="my-data-2">
-                            <option value="القاهرة">
-                            <option value="الجيزة">
-                            <option value="أسوان">
-                            <option value="الأقصر">
-                        </datalist>
+                        <select class="form-control donation-select" name="governorate">
+                            <option value="" disabled selected>اختر المحافظة</option>
+                            <option value="الجيزة">الجيزة</option>
+                            <option value="القاهرة">القاهرة</option>
+                            <option value="الاقصر">الاقصر</option>
+                            <option value="اسوان">اسوان</option>
+                        </select>
                         <div class="customized-input pl-3 pl-sm-4 pl-lg-3">
                             <i class="fas fa-chevron-down"></i>
                         </div>
@@ -155,15 +162,15 @@
                 <div class="first-case mx-auto" style="width: 98%">
                     <div class="row mt-4 information">
                         <div class="col-lg-2 my-4 my-lg-2">
-                            <div class="blood-type"><p class="text-center">+B</p></div>
+                            <div class="blood-type"><h2 class="text-center">+B</h2></div>
                         </div>
                         <div class="col-lg-6 my-auto case-name">
                             <p>اسم الحالة: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>احمد محمد احمد</span></p>
-                            <p> مستشفى: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>قصر العيني</span></p>
+                            <p class="my-4"> مستشفى: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>قصر العيني</span></p>
                             <p> المدينة&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>المنصورة</span> </p>
                         </div>
                         <div class="col-lg-3 offset-lg-1 d-flex case-details">
-                            <a href="donation-details.html" class="btn btn-lg rounded-0 my-4 my-lg-auto">التفاصيل</a>
+                            <a href="donation-details.html" class="btn btn-lg rounded-0 my-4 my-lg-auto mx-auto">التفاصيل</a>
                         </div>
                     </div>
                 </div>
@@ -171,15 +178,15 @@
                 <div class="second-case mx-auto" style="width: 98%">
                     <div class="row mt-4 information">
                         <div class="col-lg-2 my-4 my-lg-2">
-                            <div class="blood-type"><p class="text-center">+A</p></div>
+                            <div class="blood-type"><h2 class="text-center">+A</h2></div>
                         </div>
                         <div class="col-lg-6 my-auto case-name">
                             <p>اسم الحالة: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>احمد محمد احمد</span></p>
-                            <p> مستشفى: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>قصر العيني</span></p>
+                            <p class="my-4"> مستشفى: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>قصر العيني</span></p>
                             <p> المدينة&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>المنصورة</span> </p>
                         </div>
                         <div class="col-lg-3 offset-lg-1 d-flex mb-2 case-details">
-                            <a href="donation-details.html" class="btn btn-lg rounded-0 my-4 my-lg-auto">التفاصيل</a>
+                            <a href="donation-details.html" class="btn btn-lg rounded-0 my-4 my-lg-auto mx-auto">التفاصيل</a>
                         </div>
                     </div>
                 </div>
@@ -187,15 +194,15 @@
                 <div class="third-case mx-auto" style="width: 98%">
                     <div class="row mt-4 information">
                         <div class="col-lg-2 my-4 my-lg-2">
-                            <div class="blood-type"><p class="text-center">+AB</p></div>
+                            <div class="blood-type"><h2 class="text-center">+AB</h2></div>
                         </div>
                         <div class="col-lg-6 my-auto case-name">
                             <p>اسم الحالة: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>احمد محمد احمد</span></p>
-                            <p> مستشفى: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>قصر العيني</span></p>
+                            <p class="my-4"> مستشفى: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>قصر العيني</span></p>
                             <p> المدينة&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>المنصورة</span> </p>
                         </div>
                         <div class="col-lg-3 offset-lg-1 d-flex mb-2 case-details">
-                            <a href="donation-details.html" class="btn btn-lg rounded-0 my-4 my-lg-auto">التفاصيل</a>
+                            <a href="donation-details.html" class="btn btn-lg rounded-0 my-4 my-lg-auto mx-auto">التفاصيل</a>
                         </div>
                     </div>
                 </div>
@@ -203,15 +210,15 @@
                 <div class="forth-case mx-auto" style="width: 98%">
                     <div class="row mt-4 information">
                         <div class="col-lg-2 my-4 my-lg-2">
-                            <div class="blood-type"><p class="text-center">-O</p></div>
+                            <div class="blood-type"><h2 class="text-center">-O</h2></div>
                         </div>
                         <div class="col-lg-6 my-auto case-name">
                             <p>اسم الحالة: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>احمد محمد احمد</span></p>
-                            <p> مستشفى: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>قصر العيني</span></p>
+                            <p class="my-4"> مستشفى: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>قصر العيني</span></p>
                             <p> المدينة&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>المنصورة</span> </p>
                         </div>
                         <div class="col-lg-3 offset-lg-1 d-flex mb-2 case-details">
-                            <a href="donation-details.html" class="btn btn-lg rounded-0 my-4 my-lg-auto">التفاصيل</a>
+                            <a href="donation-details.html" class="btn btn-lg rounded-0 my-4 my-lg-auto mx-auto">التفاصيل</a>
                         </div>
                     </div>
                 </div>
@@ -219,15 +226,15 @@
                 <div class="first-case mx-auto" style="width: 98%">
                     <div class="row mt-4 information">
                         <div class="col-lg-2 my-4 my-lg-2">
-                            <div class="blood-type"><p class="text-center">+B</p></div>
+                            <div class="blood-type"><h2 class="text-center">+B</h2></div>
                         </div>
                         <div class="col-lg-6 my-auto case-name">
                             <p>اسم الحالة: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>احمد محمد احمد</span></p>
-                            <p> مستشفى: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>قصر العيني</span></p>
+                            <p class="my-4"> مستشفى: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>قصر العيني</span></p>
                             <p> المدينة&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>المنصورة</span> </p>
                         </div>
                         <div class="col-lg-3 offset-lg-1 d-flex case-details">
-                            <a href="donation-details.html" class="btn btn-lg rounded-0 my-4 my-lg-auto">التفاصيل</a>
+                            <a href="donation-details.html" class="btn btn-lg rounded-0 my-4 my-lg-auto mx-auto">التفاصيل</a>
                         </div>
                     </div>
                 </div>
@@ -235,15 +242,15 @@
                 <div class="second-case mx-auto" style="width: 98%">
                     <div class="row mt-4 information">
                         <div class="col-lg-2 my-4 my-lg-2">
-                            <div class="blood-type"><p class="text-center">+A</p></div>
+                            <div class="blood-type"><h2 class="text-center">+A</h2></div>
                         </div>
                         <div class="col-lg-6 my-auto case-name">
                             <p>اسم الحالة: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>احمد محمد احمد</span></p>
-                            <p> مستشفى: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>قصر العيني</span></p>
+                            <p class="my-4"> مستشفى: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>قصر العيني</span></p>
                             <p> المدينة&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>المنصورة</span> </p>
                         </div>
                         <div class="col-lg-3 offset-lg-1 d-flex mb-2 case-details">
-                            <a href="donation-details.html" class="btn btn-lg rounded-0 my-4 my-lg-auto">التفاصيل</a>
+                            <a href="donation-details.html" class="btn btn-lg rounded-0 my-4 my-lg-auto mx-auto">التفاصيل</a>
                         </div>
                     </div>
                 </div>
@@ -251,15 +258,15 @@
                 <div class="third-case mx-auto" style="width: 98%">
                     <div class="row mt-4 information">
                         <div class="col-lg-2 my-4 my-lg-2">
-                            <div class="blood-type"><p class="text-center">+AB</p></div>
+                            <div class="blood-type"><h2 class="text-center">+AB</h2></div>
                         </div>
                         <div class="col-lg-6 my-auto case-name">
                             <p>اسم الحالة: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>احمد محمد احمد</span></p>
-                            <p> مستشفى: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>قصر العيني</span></p>
+                            <p class="my-4"> مستشفى: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>قصر العيني</span></p>
                             <p> المدينة&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>المنصورة</span> </p>
                         </div>
                         <div class="col-lg-3 offset-lg-1 d-flex mb-2 case-details">
-                            <a href="donation-details.html" class="btn btn-lg rounded-0 my-4 my-lg-auto">التفاصيل</a>
+                            <a href="donation-details.html" class="btn btn-lg rounded-0 my-4 my-lg-auto mx-auto">التفاصيل</a>
                         </div>
                     </div>
                 </div>
@@ -267,15 +274,15 @@
                 <div class="forth-case mx-auto" style="width: 98%">
                     <div class="row mt-4 information">
                         <div class="col-lg-2 my-4 my-lg-2">
-                            <div class="blood-type"><p class="text-center">-O</p></div>
+                            <div class="blood-type"><h2 class="text-center">-O</h2></div>
                         </div>
                         <div class="col-lg-6 my-auto case-name">
                             <p>اسم الحالة: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>احمد محمد احمد</span></p>
-                            <p> مستشفى: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>قصر العيني</span></p>
+                            <p class="my-4"> مستشفى: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>قصر العيني</span></p>
                             <p> المدينة&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>المنصورة</span> </p>
                         </div>
                         <div class="col-lg-3 offset-lg-1 d-flex mb-2 case-details">
-                            <a href="donation-details.html" class="btn btn-lg rounded-0 my-4 my-lg-auto">التفاصيل</a>
+                            <a href="donation-details.html" class="btn btn-lg rounded-0 my-4 my-lg-auto mx-auto">التفاصيل</a>
                         </div>
                     </div>
                 </div>
