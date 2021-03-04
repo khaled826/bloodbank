@@ -1,0 +1,448 @@
+* {
+    box-sizing: border-box; margin: 0; padding: 0}
+body {font-family: 'Cairo', sans-serif}
+
+/*Starting global initial bar*/
+.initial-bar {background-color: #2d3e50; color: #faf7fc; min-height: 45px;}
+.initial-bar .holder .first {margin-top: 6px}
+.initial-bar .holder .first a {font-weight: 600; height: 40px}
+.initial-bar .holder .first > a:nth-child(1) {color: #b82a37}
+.initial-bar .holder .first > a:nth-child(2) {
+    border-left: 2px solid #596f87;
+    color: #596f87;
+    font-size: 20px;
+}
+.initial-bar .holder .second a{color: #FFF; font-size: 24px; margin-left: 15px;}
+.initial-bar .create-account-initial-bar-edit {
+    margin-top: .50rem !important; margin-bottom: 10px;
+}
+.initial-bar .holder .third {color: #dee3eaea; line-height: 30px}
+.initial-bar .holder .third > div:nth-child(2){
+    border-left: 1px solid #dee3eabb;
+}
+/*Ending global initial bar*/
+
+/*Starting navbar*/
+.navbar {padding: 0;}
+
+nav .navbar-brand img {
+    height:90px
+}
+
+.navbar-light .navbar-nav .nav-item {
+    font-size: 18px;
+    line-height: 80px;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    
+}
+
+.navbar-light ul.navbar-nav .active .nav-link {
+    color: #e43438;
+}
+
+.navbar-light .navbar-nav .nav-item:hover,
+.navbar-light ul.navbar-nav li.active {
+    color: #e43438;
+    border-bottom: 3px solid #e43438;
+    font-weight: 700;
+}
+
+.navbar-light ul.navbar-nav li.pseudo-active,
+.navbar-light ul.navbar-nav li.pseudo-active {
+    border-bottom: 3px solid #FFF;
+}
+
+.navbar-light .navbar-nav .nav-item:hover .nav-link {
+    color: #e43438;
+}
+
+.navbar-light .navbar-toggler {border: none; outline: none;}
+
+.navbar-override-global, .navbar-override-global:hover {
+    height: 55px !important;
+    width: 208px !important;
+    font-size: 18px !important;
+    background-color: #2d3e50;
+    color: #FFF
+}
+
+.blood-icon {
+    height: 70px;
+    z-index: 2;
+    position: absolute;
+    top: -35%;
+    left: 1%;
+}
+/*Ending global navbar*/
+
+/*Starting global footer*/
+footer {background-color: #1a1f25; color: #c1c5c6}
+footer .footer-icon img {height: 70px}
+footer .footer-icon h4 {color: #FFF}
+footer .footer-icon p {font-size: 15px}
+footer ul {list-style: none}
+footer ul li a {color: #c1c5c6}
+footer ul .here {color: #ca1e21}
+footer ul li a:hover, footer ul li a:active {color: #ca1e21}
+footer .footer-find p {width: 200px; color: #c61e29}
+footer .footer-find img {height: 70px}
+footer .copyright {background-color: #14171c}
+footer .copyright .social-media a {color: #FFF; font-size: 20px}
+footer .row div:nth-child(2) {font-size: 14px}
+footer .copyright .row div:nth-child(2) a {color: #c61e29}
+/*Ending global footer*/
+
+
+/*********Starting create account page*********/
+/***Starting register***/
+/*Starting breadcrumb*/
+.register .breadcrumb {
+    background-color: #FFF;
+    font-size: 18px;
+    border: 1px solid #ededed;
+    background-color: #fbfbfb
+}
+.register .breadcrumb > :nth-child(1) a {
+    color: #c0c0c0;
+}
+/*Ending breadcrumb*/
+
+/*Strating registering form*/
+.register {
+    border-top: 1px solid #e4e6e5;
+    box-shadow: inset 0 10px 10px #e4e6e5;
+}
+.create-account-initial-bar-edit > :first-child a {color: #f7ffff}
+
+.create-account-initial-bar-edit > :nth-child(2) a {color: #fead38}
+
+.registering-form form {border: 1px solid #eaeaea}
+.registering-form .form-group :nth-child(3),
+.registering-form .form-group > :nth-child(5),
+.registering-form .form-group > :nth-child(6),
+.registering-form .form-group > :nth-child(8) {
+    position: relative;
+}
+.registering-form .form-group :nth-child(3) .fa-2x,
+.registering-form .form-group :nth-child(8) .fa-2x {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+}
+.create-account-select {
+    appearance: none;
+    position: relative;
+}
+.registering-form .form-group > :nth-child(5) :nth-child(2),
+.registering-form .form-group > :nth-child(6) :nth-child(2) {
+    position: absolute;
+    top: 35%;
+    right: 11%;
+    font-size: 22px;
+}
+
+.registering-form .form-control {max-width: 85%; height: 60px; font-size: 20px;}
+.registering-form button {font-size: 25px; width: 30%; height: 65px}
+
+/*Ending registering form*/
+/***Ending register***/
+/********Ending create account page**********/
+
+
+/********Starting log in page**********/
+.log-in {
+    background-color: #fbfbfb;
+    border-top: 1px solid #e4e6e5;
+    box-shadow: inset 0 10px 10px #e4e6e5;
+}
+.log-in-initial-bar-edit > :first-child a {color: #f7ffff}
+.log-in-initial-bar-edit > :nth-child(2) a {color: #fead38}
+
+/*Starting log in*/
+.log-in .breadcrumb {
+    background-color: #FFF;
+    font-size: 18px;
+    border: 1px solid #ededed;
+}
+.log-in .breadcrumb > :nth-child(1) a {color: #c0c0c0}
+.personal-info {border: 1px solid #ededed}
+.personal-info > img {height: 120px}
+.personal-info > input {border-color: #ededed; max-width: 80%; height: 60px}
+.personal-info [type="checkbox"] {height: 22px; width: 22px}
+.personal-info label {font-size: 22px}
+.personal-info .row :nth-child(2) a {color: #272727; font-size: 20px}
+.personal-info .row :nth-child(3) button {width: 60%; height: 70px; font-size: 25px}
+.personal-info .row :nth-child(4) a {width: 60%; height: 70px; font-size: 25px}
+/*Ending log in*/
+/********Ending log in page**********/
+
+
+/********Starting articles details page**********/
+.articles-details {
+    background-color: #fbfbfb;
+    border-top: 1px solid #e4e6e5;
+    box-shadow: inset 0 10px 10px #e4e6e5;
+}
+/*Starting breadcrumb*/
+.articles-details .breadcrumb {background-color: #FFF; border: 1px solid #eaeaea}
+.articles-details .breadcrumb .customized-breadcrumb-item a {color: #bdbdbd; font-size: 19px}
+.breadcrumb-item+.breadcrumb-item::before {font-size: 19px}
+/*Ending breadcrumb*/
+
+/*Starting the article*/
+.articles-details .the-article img {width: 80%}
+.articles-details .the-article .the-article-address {background-color: #2d3e50; color: #fffdfb}
+.articles-details .the-article .the-article-address .the-article-heart-icon {
+    font-size: 24px;
+    font-weight: 800;
+    border: 1px solid #FFF;
+    width: 50px; height: 50px;
+    border-radius: 30px;
+    padding-left: .7rem;
+}
+.articles-details .the-article p {
+    font-size: 20px;
+    border: 1px solid #eaeaea;
+    line-height: 180%;
+    color: #282828;
+}
+/*Ending the article*/
+
+/*Starting related articles*/
+.related-articles {position: relative}
+.related-articles h3 {
+    color: #ac191f;
+    border-bottom: 2px solid #ac191f;
+    width: 190px;
+    font-weight: 700;
+}
+.related-articles .card .card-img-top {position: relative}
+.related-articles .card .heart-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #bfbfc2;
+    background-color: #2d3e50;
+    border-radius: 50%;
+    width: 35px; height: 35px;
+    font-size: 20px;
+}
+.related-articles .card h5 {color: #b22428}
+.related-articles hr {margin-top: -9px; margin-bottom: 40px;}
+.related-articles .card {padding: 2px;}
+.related-articles .card a {
+    width: 140px;
+    color: #faf7fc;
+    background-color: #2d3e50;
+    border-color: #2d3e50;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.related-articles .owl-nav {
+    display: inline-block;
+    position: absolute;
+    top: -27%;
+    right: 0%;
+    font-size: 65px;
+    color: #b4b4b4;
+}
+.related-articles .owl-nav :nth-child(1) {margin-left: 10px}
+.related-articles .owl-nav button, .articles .owl-nav button:focus  {
+    margin-right: 5px;
+    outline: none;
+}
+/*Ending related articles*/
+/********Ending articles details page**********/
+
+/********Starting contact us page**********/
+.contact-us, .donation-details, .donation-request, .about-us {
+    background-color: #fbfbfb;
+    border-top: 1px solid #e4e6e5;
+    box-shadow: inset 0 10px 10px #e4e6e5;
+    padding-top: 10px;
+}
+
+/*Starting breadcrumb*/
+.contact-us .breadcrumb {background-color: #FFF; border: 1px solid #eaeaea}
+.contact-us .breadcrumb .customized-breadcrumb-item-2 a {
+    color: #bdbdbd;
+    font-size: 19px;
+}
+.breadcrumb-item+.breadcrumb-item::before {font-size: 19px}
+/*Ending breadcrumb*/
+.contact-us .contact-platforms, .contact-us .contact-info {border: 1px solid #e9e9e9}
+
+.contact-us .contact-platforms > :first-child, .contact-us .contact-info > :first-child {
+    background-color: #2d3e50;
+    color: #fcffff;
+}
+.contact-us .contact-platforms > :nth-child(2) {width: 75%}
+.contact-us .contact-platforms > :nth-child(3) {border: 1px solid #e9e9e9}
+.contact-us .contact-platforms > :nth-child(3) p {font-size: 24px}
+.contact-us .contact-platforms > :nth-child(3) span {
+    color: #ff1a26;
+    font-size: 26px;
+    font-weight: 600;
+}
+.contact-us .contact-platforms .social-media a img {height: 55px}
+.contact-us .contact-info input {
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 65px;
+}
+.contact-us .contact-info textarea {width: 95%; max-height: 200px; min-height: 70px; overflow: auto;}
+.contact-us .contact-info button {
+    color: #FFF;
+    background-color: #2d3e50;
+    height: 70px;
+    width: 92%;
+    font-size: 22px;
+    font-weight: 600;
+}
+/********Ending contact us page**********/
+
+/********starting donation details page**********/
+/*Starting breadcrumb*/
+/*.donation-details */.breadcrumb {background-color: #FFF; border: 1px solid #eaeaea}
+/*.donation-details */.breadcrumb .customized-breadcrumb-item a {color: #bdbdbd; font-size: 19px}
+.breadcrumb .breadcrumb-item.active {font-size: 18px}
+/*Ending breadcrumb*/
+
+.donation-details .donation-info {border: 1px solid #eaeaea; background-color: #FFF}
+.donation-details .donation-info .name {border: 1px solid #efefef; font-size: 23px;}
+.donation-details .donation-info .name :nth-child(1) {
+    background-color: /*#f4f4f4;*/ #9e9e9e;
+    width: 50%;
+    border-right: 1px solid #292929;
+    /*float: right;*/
+}
+.donation-details .donation-info .name :nth-child(2) {
+    width: 50%;
+    background-color: /*#fbfbfb;*/ #CCC;
+    /*float: right;*/
+}
+.donation-details .donation-info .hospital-add :nth-child(1) {width: 264px}
+.donation-details .donation-info .hospital-add :nth-child(2) {width: 826px}
+.donation-details .donation-info a {
+    width: 250px;
+    background-color: #2d3e50;
+    color: #fffeff;
+    height: 75px;
+    font-size: 24px;
+    line-height: 65px;
+    text-decoration: none;
+    border: 1px solid #2d3e50;
+}
+.donation-details .donation-info a:hover {
+    background-color: #fffeff;
+    color: #2d3e50;
+    transition: all .5s ease;
+}
+.donation-details .donation-info p {
+    border: 1px solid #eaeaea;
+    font-size: 22px;
+    line-height: 50px;
+}
+/********Ending donation details page**********/
+
+/********Stating donation request page**********/
+
+/*Starting donation*/
+.donation .my-background {background-color: #EEE; border: 1px solid #e1e1e1;}
+.donation h3 {color: #a80d14; font-weight: 600; border-bottom: 2px solid #a80d14; width: 150px}
+.donation hr {margin-top: -9px}
+select.donation-select {
+    appearance: none;
+    border-radius: 1.25rem !important;
+    position: relative
+}
+  .customized-input {
+      position: absolute;
+      top: -3%;
+      right: 8%;
+      height: 40px;
+      width: 45px;
+      border-left: 1px solid #ced4da;
+      line-height: 40px;
+  }
+  .donation .container > :nth-child(1) :nth-child(3) button,
+  .donation .container > :nth-child(1) :nth-child(3) button:focus {
+    border: none;
+    font-size: 20px;
+    background-color: #FFF;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-top: -5px;
+    outline: none;
+  }
+.donation .information {
+    background-color: #FFF;
+    border-bottom-left-radius: 110px;
+    border-top-left-radius: 110px;
+}
+.donation .information .blood-type {
+    border-radius: 50%;
+    background-color: #EEE;
+    height: 160px;
+    width: 160px;
+}
+.donation .information .blood-type h2 {line-height: 156px; font-size: 50px; font-weight: 900}
+.donation .information .case-name {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #495b6b;
+}
+.donation .information .case-name span {color: #575757}
+.donation .information .case-details a, .donation .information .case-details a:focus,
+.donation .information .case-details a:active {
+    width: 235px;
+    height: 80px;
+    background-color: #EEE;
+    box-shadow: none;
+    color: #282828;
+    line-height: 60px;
+    font-weight: 600;
+}
+.donation .information .case-details a:hover {
+    color: #EEE;
+    background-color: #2d3e50;
+    transition: all .5s ease;
+}
+/*Ending donation*/
+
+/*Starting pagination*/
+.donation-request nav.my-pages {
+    width: 605px;
+}
+.donation-request .pagination .page-link {
+    margin-left: 5px;
+    width: 70px;
+    height: 70px;
+    font-size: 24px;
+    line-height: 50px;
+    color: #000000;
+}
+.donation-request .pagination .page-link:hover {
+    background-color: #2d3e50;
+    color: #fffef8;
+}
+.donation-request .pagination .svg-inline--fa {
+    font-size: 18px;
+}
+/*Ending pagination*/
+/********Ending donation request page**********/
+
+/********Starting about us page**********/
+.about-us p {
+    color: #292929;
+    line-height: 32px;
+}
+/********Ending about us page**********/

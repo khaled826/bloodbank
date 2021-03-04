@@ -1,0 +1,286 @@
+* {box-sizing: border-box; margin: 0; padding: 0}
+body {font-family: 'Cairo', sans-serif}
+
+/*Starting initial bar*/
+.initial-bar {background-color: #2d3e50; color: #faf7fc; min-height: 45px;}
+.initial-bar .holder .first {margin-top: 6px}
+.initial-bar .holder .first a {font-weight: 600; height: 40px}
+.initial-bar .holder .first > a:nth-child(1) {color: #b82a37}
+.initial-bar .holder .first > a:nth-child(2) {
+    border-left: 2px solid #596f87;
+    color: #596f87;
+    font-size: 20px;
+}
+.initial-bar .holder .second a {color: #FFF; font-size: 24px; margin-right: 5px;}
+.initial-bar .holder .third {color: #dee3eaea; line-height: 45px; font-size: 20px}
+.initial-bar .holder .third > div:nth-child(2){border-left: 1px solid #dee3eabb}
+/*Ending initial bar*/
+
+/*Starting navbar*/
+.navbar {padding: 0;}
+
+nav .navbar-brand img {
+    height:90px
+}
+
+.navbar-light .navbar-nav .nav-item {
+    font-size: 18px;
+    line-height: 80px;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    
+}
+
+.navbar-light ul.navbar-nav .active .nav-link {
+    color: #e43438;
+}
+
+.navbar-light .navbar-nav .nav-item:hover,
+.navbar-light ul.navbar-nav li.active {
+    color: #e43438;
+    border-bottom: 3px solid #e43438;
+    font-weight: 700;
+}
+
+.navbar-light .navbar-nav .nav-item:hover .nav-link {
+    color: #e43438;
+}
+
+.navbar-light .navbar-toggler {border: none; outline: none;}
+
+.navbar .sign-in {
+    color: #47525d;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: underline;
+    /*margin-right: 60px;*/
+    width: 130px;
+}
+.navbar-light .btn {
+    background-color: #2d3e50;
+    border-color: #2d3e50;
+    color: #faf7fc;
+    font-size: 16px;
+    margin-left: 15px;
+    margin-right: 8px;
+    width: 120px;
+    padding: 8px
+}
+
+/*Ending navbar*/
+/*Starting slogan*/
+.slogan {
+    background: url(../assets/imgs/header1-ltr.jpg) top center no-repeat ;
+    background-size: cover;
+    min-height: 500px;
+    position: relative;
+    
+}
+.slogan h4 {font-weight: 700; color: #a60e14}
+.slogan p {
+    max-width: 400px;
+    line-height: 40px;
+    font-weight: 700;
+    color: #3c4344;
+    font-size: 18px;
+}
+.slogan .my-text a {width: 140px; color: #faf7fc; background-color: #2d3e50; border-color: #2d3e50}
+.slogan .owl-dots {position: absolute; top: 122%; left: 50%}
+.slogan .owl-dots .owl-dot:focus {outline: none}
+.slogan-owl-carousel .owl-dots .owl-dot span {
+    width: 18px;
+    height: 18px;
+    margin: 5px 7px;
+    background: #D6D6D6;
+    display: block;
+    backface-visibility: visible;
+    transition: all .5s ease;
+    border-radius: 30px;
+}
+.slogan .owl-dots .owl-dot span:focus, .owl-dots .owl-dot.active span {
+    border: 1px solid #e76369;
+    outline: none;
+}
+/*Ending slogan*/
+
+/*Starting about-us*/
+.about-us {background: url(../assets/imgs/about2-ltr.png) no-repeat; background-size: cover}
+.about-us p {
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #3c4344;
+    margin-top: 133px;
+    margin-bottom: 135px;
+    max-width: 600px;
+}
+.about-us p span {color: #b12b2e}
+/*Ending about-us*/
+
+/*Starting articles*/
+/*.articles {position: relative}*/
+.articles {margin-top: 5rem !important;}
+.articles h3 {color: #ac191f; border-bottom: 2px solid #ac191f; width: 120px; font-weight: 700}
+.articles hr {margin-bottom: -67px}
+.articles .card {padding: 2px;}
+.articles .card .card-img-top {position: relative}
+.articles .card .heart-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #bfbfc2;
+    background-color: #2d3e50;
+    border-radius: 50%;
+    width: 35px; height: 35px;
+    font-size: 20px
+}
+.articles .card h5 {color: #b22428}
+.articles .card a {
+    width: 140px;
+    color: #faf7fc;
+    background-color: #2d3e50;
+    border-color: #2d3e50;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.articles .owl-nav {
+    display: inline-block;
+    position: absolute;
+    top: -23%;
+    right: 0%;
+    font-size: 60px;
+    color: #b4b4b4;
+}
+.articles .owl-nav :nth-child(1) {margin-left: 10px}
+.articles .owl-nav button, .articles .owl-nav button:focus  {margin-right: 5px; outline: none}
+/*Ending articles*/
+
+/*Starting donation*/
+.donation .my-background {background-color: #EEE}
+.donation h3 {color: #a80d14; font-weight: 600; border-bottom: 2px solid #a80d14; width: 150px}
+.donation hr {margin-top: -9px}
+select {
+    appearance: none;
+    border-radius: 1.25rem !important;
+    position: relative
+}
+
+  .customized-input {
+      position: absolute;
+      top: -3%;
+      right: 7%;
+      height: 40px;
+      width: 45px;
+      border-left: 1px solid #ced4da;
+      line-height: 40px;
+  }
+  .donation .container > :nth-child(1) :nth-child(3) button,
+  .donation .container > :nth-child(1) :nth-child(3) button:focus {
+    border: none;
+    font-size: 20px;
+    background-color: #FFF;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-top: -5px;
+    outline: none;
+  }
+.donation .information {
+    background-color: #FFF;
+    border-bottom-left-radius: 110px;
+    border-top-left-radius: 110px;
+}
+.donation .information .blood-type {
+    border-radius: 50%;
+    background-color: #EEE;
+    height: 160px;
+    width: 160px;
+}
+.donation .information .blood-type h2 {line-height: 156px; font-size: 50px; font-weight: 900}
+.donation .information .case-name {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #495b6b;
+}
+.donation .information .case-name span {color: #575757}
+.donation .information .case-details a, .donation .information .case-details a:focus,
+.donation .information .case-details a:active {
+    width: 235px;
+    height: 80px;
+    background-color: #EEE;
+    box-shadow: none;
+    color: #282828;
+    line-height: 60px;
+    font-weight: 600
+}
+.donation .information .case-details a:hover {
+    color: #EEE;
+    background-color: #2d3e50;
+    transition: all .5s ease;
+}
+
+                    /*المزيد*/
+.donation .container > a {
+    width: 210px;
+    color: #FFF;
+    background-color: #2d3e50;
+    font-size: 20px;
+    height: 60px;
+    line-height: 40px;
+    font-weight: 600;
+    box-shadow: none;
+}
+.donation .container > a:hover {
+    color: #282828;
+    background-color: #CCC;
+    transition: all .5s ease;
+}
+/*Ending donation*/
+
+/*Starting whatsapp number*/
+.whatsapp-number {background: url(../assets/imgs/call-ltr.jpg) no-repeat; background-size: cover}
+.whatsapp-number h3 {color: #9c2829; border-bottom: 2px solid #9c2829; width: 100px}
+.whatsapp-number p {font-size: 20px; font-weight: 700; margin-right: auto; margin-left: 35px;}
+.whatsapp-number .rounded-pill {
+    height: 82px;
+    width: 350px;
+    background-color: #3ab54a;
+    color: #f8fbf8;
+    letter-spacing: 4px;
+    position: relative;
+    text-decoration: none;
+}
+.whatsapp-number .rounded-pill img {
+    position: absolute;
+    top: -5%;
+    right: -6%;
+    height: 95px;
+}
+/*Ending whatsapp number*/
+
+/*Starting find us*/
+.find-us {background: url(../imgs/BG-phone.png) no-repeat; background-size: cover}
+.find-us .google-icon img, .find-us .ios-icon img {height: 75px}
+/*Ending find us*/
+
+/*Starting footer*/
+footer {background-color: #1a1f25; color: #c1c5c6}
+footer .footer-icon img {height: 70px}
+footer .footer-icon h4 {color: #FFF}
+footer .footer-icon p {font-size: 15px}
+footer ul {list-style: none}
+footer ul li a {color: #c1c5c6}
+footer ul .here {color: #ca1e21}
+footer ul li a:hover, footer ul li a:active {color: #ca1e21}
+footer .footer-find p {width: 200px; color: #c61e29}
+footer .footer-find img {height: 70px}
+footer .copyright {background-color: #14171c}
+footer .copyright .social-media a {color: #FFF; font-size: 20px}
+footer .row div:nth-child(2) {font-size: 14px}
+footer .copyright .row div:nth-child(2) a {color: #c61e29}
+/*Ending footer*/

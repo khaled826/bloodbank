@@ -1,0 +1,199 @@
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .initial-bar .holder .second {
+        margin-left: 20px!important;
+        margin-right: 20px;
+    }
+
+    .initial-bar .holder .third > div:nth-child(2){border-left:none}
+    
+    nav .navbar-brand img {
+        height:65px
+    }
+    .navbar-light .navbar-nav .nav-item,
+    .navbar-light .navbar-nav .nav-item:hover,
+    .navbar-light ul.navbar-nav li.active {
+        line-height: normal;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-right: 10px;
+        border-bottom: none;
+    }
+
+    .slogan {background: url(../assets/imgs/BG1.jpg); text-align: center;}
+    .slogan p {max-width: none;}
+    
+
+    .about-us {background: none}
+    .about-us p {margin-top: 30px; margin-bottom: 10px; font-size: 16px;}
+
+    .donation .information {border-bottom-left-radius: unset; border-top-left-radius: unset}
+    .donation .information .blood-type {margin-left: auto; margin-right: auto}
+    .donation .information .case-name {text-align: center}
+    
+
+    .whatsapp-number .rounded-pill {width: 250px; height: 64px; letter-spacing: 2px}
+    .whatsapp-number .rounded-pill p {font-size: 16px; margin-left: 10px;}
+    .whatsapp-number .rounded-pill img {height: 80px;}
+
+    .find-us .google-icon img, .find-us .ios-icon img {height: 68px}
+
+    .related-articles .owl-nav {display: none;}
+
+    .registering-form button {font-size: 22px; width: 100px; height: 50px}
+
+    /*.log-in-navbar-edit {
+        height: 45px !important;
+        width: 100px !important;
+        font-size: 16px !important
+    }*/
+
+    .personal-info > img {height: 80px}
+
+    .articles-details .the-article .the-article-address h4 {font-size: 18px}
+
+    .contact-us .contact-platforms > :nth-child(3) p {font-size: 20px}
+
+    .donation-details .donation-info .name {font-size: 18px}
+    .donation-details .donation-info .name :nth-child(1), .donation-details .donation-info .name :nth-child(2) {
+        width: 100%;
+    }
+
+    .donation-request nav.my-pages {
+        width: 210px;
+    }
+    .donation-request .pagination .page-link {
+        margin-left: 2px;
+        margin-bottom: 3px;
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+        line-height: 35px;
+    }
+    .donation-request .pagination .svg-inline--fa {
+        font-size: 14px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .initial-bar .holder .second {margin-left: 22px!important; margin-right: 22px}
+
+    .navbar-light .navbar-nav .nav-item,
+    .navbar-light .navbar-nav .nav-item:hover,
+    .navbar-light ul.navbar-nav li.active {
+        line-height: normal;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-right: 10px;
+        border-bottom: none;
+    }
+
+    .slogan {background: url(../assets/imgs/BG1.jpg); text-align: center;}
+    .slogan p {max-width: none;}
+
+    .about-us  {background: none}
+    .about-us p {margin-top: 20px; margin-bottom: 20px; font-size: 16px;}
+
+    .donation .information {border-bottom-left-radius: unset; border-top-left-radius: unset}
+    .donation .information .blood-type {margin-left: auto; margin-right: auto}
+    .donation .information .case-name {text-align: center}
+
+    .whatsapp-number .my-theme {background-color: rgba(255, 255, 255, 0.651)}
+    .find-us .google-icon img, .find-us .ios-icon img {height: 68px}
+    .contact-us .contact-platforms > :nth-child(3) p {font-size: 20px}
+
+    .donation-details .donation-info .name {font-size: 18px}
+
+    .donation-request nav.my-pages {
+        width: 260px;
+    }
+    .donation-request .pagination .page-link {
+        margin-left: 2px;
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+        line-height: 35px;
+    }
+    .donation-request .pagination .svg-inline--fa {
+        font-size: 14px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-item,
+    .navbar-light .navbar-nav .nav-item:hover,
+    .navbar-light ul.navbar-nav li.active {
+        line-height: normal;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-right: 10px;
+        border-bottom: none;
+    }
+
+    .slogan {background: url(../assets/imgs/BG1.jpg); text-align: center;}
+    .slogan p {max-width: none;}
+
+    .about-us {background: none}
+    .about-us p {margin-top: 30px; margin-bottom: 20px;}
+
+    .donation .information {border-bottom-left-radius: unset; border-top-left-radius: unset}
+    .donation .information .blood-type {margin-left: auto; margin-right: auto}
+    .donation .information .case-name {text-align: center}
+
+    .whatsapp-number .my-theme {background-color: rgba(255, 255, 255, 0.651)}
+
+    .donation-request nav.my-pages {
+        width: 260px;
+    }
+    .donation-request .pagination .page-link {
+        width: 60px;
+        height: 60px;
+        line-height: 50px;
+    }
+    .donation-request .pagination .svg-inline--fa {
+        font-size: 16px;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .navbar .container .navbar-nav .nav-item {
+        font-size: 14px;
+        padding: 0;
+        line-height: 102px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .navbar-light .btn {width: 85px; margin-left: 10px;}
+
+    .about-us {background: none}
+    .about-us p {margin-top: 30px; margin-bottom: 20px;}
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) and (max-width: 1499) {
+    
+}
+
+@media (min-width: 1500px) and (max-width: 1699px) {
+    /*.slogan {background-size: 100% 100%; min-height: 500px}
+    .slogan .owl-dots {position: absolute; top: 145%; right: 50%}*/
+}
+
+@media (min-width: 1700px) {
+    /*.slogan {background-size: 100% 100%; min-height: 580px}
+    .slogan .owl-dots {position: absolute; top: 125%; right: 50%}
+    .slogan p {
+        max-width: 400px;
+        line-height: 60px;
+        font-weight: 700;
+        font-size: 20px;
+    }*/
+}
+
+@media (max-width: 1200px) {
+    
+    
+}
