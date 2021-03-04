@@ -136,23 +136,18 @@
                             <input type="text" class="form-control form-control-lg mx-auto my-5" placeholder="فصيلة الدم">
                             
                             <div class="my-5">
-                                <select class="form-control create-account-select mx-auto" name="governorate">
-                                    <option value="" disabled selected>المحافظة</option>
-                                    <option value="الجيزة">الجيزة</option>
-                                    <option value="القاهرة">القاهرة</option>
-                                    <option value="الاقصر">الاقصر</option>
-                                    <option value="اسوان">اسوان</option>
+                                <select class="form-control create-account-select mx-auto" name="governorate" id="govs">
+                                    <option value="" disabled selected>اختر المحافظة</option>
+                                    <option value="1">الدقهلية</option>
+                                    <option value="2">الغربية</option>
                                 </select>
                                     <i class="fas fa-chevron-down"></i>
                             </div>
 
                             <div class="my-5">
-                                <select class="form-control create-account-select mx-auto" name="governorate">
-                                    <option value="" disabled selected>المدينة</option>
-                                    <option value="الجيزة">مدينة نصر</option>
-                                    <option value="القاهرة">القاهرة</option>
-                                    <option value="الاقصر">الاقصر</option>
-                                    <option value="اسوان">ادفو</option>
+                                <select class="form-control create-account-select mx-auto" name="cities" id="cities">
+                                    <option value="" disabled selected>اختر المدينة</option>
+                                    
                                 </select>
                                     <i class="fas fa-chevron-down"></i>
                             </div>
@@ -165,7 +160,7 @@
                             <input type="password" class="form-control form-control-lg mx-auto my-5" placeholder="كلمة المرور">
                             <input type="password" class="form-control form-control-lg mx-auto my-5" placeholder="تأكيد كلمة المرور">
 
-                            <button class="btn btn-lg btn-success rounded-0 d-block mx-auto">انشاء</button>
+                            <button type="submit" class="btn btn-lg btn-success rounded-0 d-block mx-auto">انشاء</button>
                         </div>
                     </form>
                 </div>
@@ -202,8 +197,8 @@
                 </div>
                 <div class="col-md-6 col-lg-4 footer-find">
                     <p class="mx-auto mb-4 mt-4 mt-md-2 text-center">متوفر على</p>
-                    <img src="assets/imgs/google1.png" class="d-block mx-auto mb-3">
-                    <img src="assets/imgs/ios1.png" class="d-block mx-auto mb-3">
+                    <a href="#"><img src="assets/imgs/google1.png" class="d-block mx-auto mb-3"></a>
+                    <a href="#"><img src="assets/imgs/ios1.png" class="d-block mx-auto mb-3"></a>
                 </div>
             </div>
         </div>
@@ -241,6 +236,27 @@
           $( "#datepicker" ).datepicker();
           $(".my-datepicker").datepicker();
         } );
+
+        $("#govs").change(function() {
+            var governorateId = $("#govs").val();
+            console.log(governorateId);
+            $.ajax({
+                url: 'https://cors-anywhere.herokuapp.com/https://ipda3-tech.com/blood-bank/api/v1/cities?governorate_id='+governorateId,
+                type: 'get',
+                data: {},
+                success: function(data){
+                    console.log(data.data);
+                    $("#cities").empty();
+                    $("#cities").append( "<option value:''>اختر المدينة</option>" )
+                    $.each(data.data, function(index, value){
+                        $("#cities").append( "<option value:'" + value.id + "'>" + value.name + "</option>" )
+                    });
+                },
+                error: function(){
+                    alert("Error");
+                }
+            })
+        });
     </script>
 
     <!--my own plugin-->
