@@ -29,11 +29,12 @@
 
     .donation .information {border-bottom-right-radius: unset; border-top-right-radius: unset}
     .donation .information .blood-type {margin-right: auto; margin-left: auto}
-    .donation .information .case-name {text-align: center}
+    .donation .information .case-name {text-align: right}
+    .donation .information .case-name p {display: grid; line-height: 38px; text-align: right;}
     
 
     .whatsapp-number .rounded-pill {width: 250px; height: 64px; letter-spacing: 2px}
-    .whatsapp-number .rounded-pill p {font-size: 16px; margin-right: 10px;}
+    .whatsapp-number .rounded-pill p {font-size: 16px; margin-right: 20px;}
     .whatsapp-number .rounded-pill img {height: 80px;}
     .whatsapp-number .my-theme {background-color: rgba(255, 255, 255, 0.651)}
 

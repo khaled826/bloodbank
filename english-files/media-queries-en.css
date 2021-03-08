@@ -29,7 +29,8 @@
 
     .donation .information {border-bottom-left-radius: unset; border-top-left-radius: unset}
     .donation .information .blood-type {margin-left: auto; margin-right: auto}
-    .donation .information .case-name {text-align: center}
+    .donation .information .case-name {text-align: left}
+    .donation .information .case-name p {display: grid; line-height: 38px; text-align: left;}
     
 
     .whatsapp-number .rounded-pill {width: 250px; height: 64px; letter-spacing: 2px}

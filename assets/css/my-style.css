@@ -56,7 +56,6 @@ nav .navbar-brand img {
     font-weight: 700;
     font-size: 15px;
     text-decoration: underline;
-    /*margin-right: 60px;*/
     width: 120px;
 }
 .navbar-light .btn {
@@ -68,6 +67,12 @@ nav .navbar-brand img {
     margin-left: 8px;
     width: 120px;
     padding: 8px
+}
+.navbar-light .btn:hover {
+    color: #2d3e50;
+    border-color: #2d3e50;
+    background-color: #faf7fc;
+    transition: all .5s ease;
 }
 
 /*Ending navbar*/
@@ -89,6 +94,8 @@ nav .navbar-brand img {
     
 }
 .slogan .my-text a {width: 140px; color: #faf7fc; background-color: #2d3e50; border-color: #2d3e50}
+.slogan .my-text a:hover {color: #2d3e50;}
+.slogan .hvr-bounce-to-right:before {background: #faf7fc}
 .slogan .owl-dots {position: absolute; top: 130%; right: 50%}
 .slogan .owl-dots .owl-dot:focus {outline: none}
 .slogan-owl-carousel .owl-dots .owl-dot span {
@@ -108,14 +115,12 @@ nav .navbar-brand img {
 /*Ending slogan*/
 
 /*Starting about-us*/
-.about-us {background: url(../imgs/about2.png) no-repeat; background-size: cover}
+.about-us {background: url(../imgs/about2.png) no-repeat; background-size: cover; padding: 70px 0}
 .about-us p {
     line-height: 50px;
     font-size: 20px;
     font-weight: 700;
     color: #3c4344;
-    margin-top: 133px;
-    margin-bottom: 135px;
     max-width: 600px;
 }
 .about-us p span {color: #b12b2e}
@@ -125,6 +130,7 @@ nav .navbar-brand img {
 /*.articles {position: relative}*/
 .articles {margin-top: 5rem !important;}
 .articles h3 {color: #ac191f; border-bottom: 2px solid #ac191f; width: 120px; font-weight: 700}
+.articles .hvr-bounce-to-right:before {background: #ac191f;}
 .articles hr {margin-bottom: -67px}
 .articles .card {padding: 2px;}
 .articles .card .card-img-top {position: relative}

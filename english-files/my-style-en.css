@@ -107,14 +107,12 @@ nav .navbar-brand img {
 /*Ending slogan*/
 
 /*Starting about-us*/
-.about-us {background: url(../assets/imgs/about2-ltr.png) no-repeat; background-size: cover}
+.about-us {background: url(../assets/imgs/about2-ltr.png) no-repeat; background-size: cover; padding: 70px 0}
 .about-us p {
     line-height: 50px;
     font-size: 20px;
     font-weight: 700;
     color: #3c4344;
-    margin-top: 133px;
-    margin-bottom: 135px;
     max-width: 600px;
 }
 .about-us p span {color: #b12b2e}
@@ -245,7 +243,7 @@ select {
 /*Starting whatsapp number*/
 .whatsapp-number {background: url(../assets/imgs/call-ltr.jpg) no-repeat; background-size: cover}
 .whatsapp-number h3 {color: #9c2829; border-bottom: 2px solid #9c2829; width: 100px}
-.whatsapp-number p {font-size: 20px; font-weight: 700; margin-right: auto; margin-left: 35px;}
+.whatsapp-number p {font-size: 20px; font-weight: 700; margin-right: auto; margin-left: 35px}
 .whatsapp-number .rounded-pill {
     height: 82px;
     width: 350px;
@@ -255,10 +253,11 @@ select {
     position: relative;
     text-decoration: none;
 }
+.whatsapp-number .rounded-pill p {padding-left: 54px;}
 .whatsapp-number .rounded-pill img {
     position: absolute;
     top: -5%;
-    right: -6%;
+    left: -6%;
     height: 95px;
 }
 /*Ending whatsapp number*/

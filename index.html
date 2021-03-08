@@ -25,11 +25,20 @@
     <!--Font awesone-->
     <link rel="stylesheet" href="assets/css/all.min.css">
 
+    <!--title icon-->
+    <link rel="icon" href="assets/imgs/Icon.png">
+
     <!--my own stylesheet-->
     <link rel="stylesheet" href="assets/css/my-style.css">
 
     <!--my own media queries-->
     <link rel="stylesheet" href="assets/css/media-queries.css">
+
+    <!--wow plugnis-->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+
+    <!--hover css-->
+    <link rel="stylesheet" href="assets/css/hover.css">
 </head>
 <body>
     <!--Starting initial bar-->
@@ -41,10 +50,10 @@
                     <a href="english-files/index-en.html" class="pl-2">EN</a>
                 </div>
                 <div class="second mt-1 ml-auto ml-lg-0">
-                    <a href="#"><i class="fab fa-facebook-f mr-0 mr-md-2"></i></a>
-                    <a href="#"><i class="fab fa-instagram mr-0 mr-md-2"></i></a>
-                    <a href="#"><i class="fab fa-twitter mr-0 mr-md-2"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="hvr-icon-push"><i class="fab fa-facebook-f mr-0 mr-md-2 hvr-icon"></i></a>
+                    <a href="#" class="hvr-icon-push"><i class="fab fa-instagram mr-0 mr-md-2 hvr-icon"></i></a>
+                    <a href="#" class="hvr-icon-push"><i class="fab fa-twitter mr-0 mr-md-2 hvr-icon"></i></a>
+                    <a href="#" class="hvr-icon-push"><i class="fab fa-whatsapp hvr-icon"></i></a>
                 </div>
                 <div class="third mx-auto mx-md-4">
                     <div class="d-inline-block">
@@ -82,11 +91,11 @@
                             </li>
                             <div class=" d-none d-lg-block" style="border-left:1px solid rgba(0, 0, 0, 0.062);height:45px; margin-top: 2.5rem"></div>
                             <li class="nav-item">
-                            <a class="nav-link" href="#">عن بنك الدم</a>
+                            <a class="nav-link" href="#about-target">عن بنك الدم</a>
                             </li>
                             <div class=" d-none d-lg-block" style="border-left:1px solid rgba(0, 0, 0, 0.062);height:45px; margin-top: 2.5rem"></div>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">المقالات</a>
+                                <a class="nav-link" href="#articles-target">المقالات</a>
                             </li>
                             <div class=" d-none d-lg-block" style="border-left:1px solid rgba(0, 0, 0, 0.062);height:45px; margin-top: 2.5rem"></div>
                             <li class="nav-item">
@@ -101,7 +110,7 @@
                                 <a class="nav-link" href="contact-us.html">اتصل بنا</a>
                             </li>
                         </ul>
-                        <a class="sign-in ml-auto d-block my-2" href="create-account-page.html">انشاء حساب جديد</a>
+                        <a href="create-account-page.html" class="sign-in ml-auto d-block my-2">انشاء حساب جديد</a>
                         <a href="log-in.html" class="btn ml-auto d-block my-3 my-lg-auto">الدخول</a>
                     </div>
                     
@@ -119,14 +128,14 @@
                     <p>
                         تطبيق بنك الدم يهدف إلى تسهيل عملية التبرع بالدم والوصول إلى المتبرعين بسهولة كبيرة ، يحرص التطبيق على الحفاظ على خصوصية بيانات المتبرعين وحمايتهم من الازعاج 
                     </p>
-                    <a href="#" class="btn rounded-0">المزيد</a>
+                    <a href="#" class="btn rounded-0 hvr-bounce-to-right">المزيد</a>
                 </div>
                 <div class="my-text">
                     <h4>بنك الدم، نمضي قدما لصحة أفضل</h4>
                     <p>
                         تطبيق بنك الدم يهدف إلى تسهيل عملية التبرع بالدم والوصول إلى المتبرعين بسهولة كبيرة ، يحرص التطبيق على الحفاظ على خصوصية بيانات المتبرعين .
                     </p>
-                    <a href="#" class="btn rounded-0">المزيد</a>
+                    <a href="#" class="btn rounded-0 hvr-bounce-to-right">المزيد</a>
                 </div>
             </div>
         
@@ -134,7 +143,7 @@
     <!--Ending slogan-->
 
     <!--Starting about-us-->
-    <section class="about-us mb-5">
+    <section class="about-us mb-5" id="about-target">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6">
@@ -151,65 +160,65 @@
     <!--Ending about-us-->
 
     <!--Starting articles-->
-    <section class="articles mt-5 mb-4 pt-2">
+    <section class="articles mt-5 mb-4 pt-2" id="articles-target">
         
         <hr>
         <div class="container">
-            <h3 class=" pb-3 mt-3 mb-4">المقالات</h3>
-            <div class="owl-carousel articles-owl-carousel d-flex justify-content-between">
+            <h3 class=" pb-3 mt-3 mb-4 hvr-bounce-to-right">المقالات</h3>
+            <div class="owl-carousel articles-owl-carousel d-flex justify-content-between wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="150">
                 <div>
-                    <div class="card">
+                    <div class="card hvr-shrink">
                         <img src="assets/imgs/p2.jpg" class="card-img-top" alt="...">
                         <a href="#">
-                            <div class="heart-icon"><i class="far fa-heart m-2"></i></div>
+                            <div class="heart-icon" title="save to favourite"><i class="far fa-heart m-2"></i></div>
                         </a>
                         <div class="card-body d-flex flex-wrap">
                           <h5 class="card-title">طريقة الوقاية من الأمراض</h5>
                           <p class="card-text">يهدف إلى تسهيل عملية التبرع بالدم والوصول إلى المتبرعين بسهولة كبيرة.  
                             </p>
-                          <a href="articles-details.html" class="btn rounded-0">التفاصيل</a>
+                          <a href="articles-details.html" class="btn rounded-0 hvr-grow-shadow">التفاصيل</a>
                         </div>
                       </div>
                 </div>
                 <div>
-                    <div class="card">
+                    <div class="card hvr-shrink">
                         <img src="assets/imgs/p1.jpg" class="card-img-top" alt="...">
                         <a href="#">
-                            <div class="heart-icon"><i class="far fa-heart m-2"></i></div>
+                            <div class="heart-icon" title="save to favourite"><i class="far fa-heart m-2"></i></div>
                         </a>
                         <div class="card-body">
                           <h5 class="card-title">طريقة الوقاية من الأمراض</h5>
                           <p class="card-text">يهدف إلى تسهيل عملية التبرع بالدم والوصول إلى المتبرعين بسهولة كبيرة.
                           </p>
-                          <a href="articles-details.html" class="btn rounded-0">التفاصيل</a>
+                          <a href="articles-details.html" class="btn rounded-0 hvr-grow-shadow">التفاصيل</a>
                         </div>
                       </div>
                 </div>
                 <div>
-                    <div class="card">
+                    <div class="card hvr-shrink">
                         <img src="assets/imgs/p2.jpg" class="card-img-top" alt="...">
                         <a href="#">
-                            <div class="heart-icon"><i class="far fa-heart m-2"></i></div>
+                            <div class="heart-icon" title="save to favourite"><i class="far fa-heart m-2"></i></div>
                         </a>
                         <div class="card-body">
                           <h5 class="card-title">طريقة الوقاية من الأمراض</h5>
                           <p class="card-text">يهدف إلى تسهيل عملية التبرع بالدم والوصول إلى المتبرعين بسهولة كبيرة.
                           </p>
-                          <a href="articles-details.html" class="btn rounded-0">التفاصيل</a>
+                          <a href="articles-details.html" class="btn rounded-0 hvr-grow-shadow">التفاصيل</a>
                         </div>
                       </div>
                 </div>
                 <div>
-                    <div class="card">
+                    <div class="card hvr-shrink">
                         <img src="assets/imgs/p1.jpg" class="card-img-top" alt="...">
                         <a href="#">
-                            <div class="heart-icon"><i class="far fa-heart m-2"></i></div>
+                            <div class="heart-icon" title="save to favourite"><i class="far fa-heart m-2"></i></div>
                         </a>
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
+                          <h5 class="card-title">طريقة الوقاية من الأمراض</h5>
                           <p class="card-text">يهدف إلى تسهيل عملية التبرع بالدم والوصول إلى المتبرعين بسهولة كبيرة.
                           </p>
-                          <a href="articles-details.html" class="btn rounded-0">التفاصيل</a>
+                          <a href="articles-details.html" class="btn rounded-0 hvr-grow-shadow">التفاصيل</a>
                         </div>
                       </div>
                 </div>
@@ -228,6 +237,7 @@
                 <div class="row">
                   
                     <div class="col-lg-4 offset-1 mb-3">
+                        
                         <select class="form-control" name="blood-type">
                             <option value="" disabled selected>اختر فصيلة الدم</option>
                             <option value="B+">B+</option>
@@ -340,7 +350,7 @@
                             <h3 class="mx-auto pb-1 mb-5">اتصل بنا</h3>
                             <p>يمكنك الاتصال بنا للاستفسار عن اي معلومة وسيتم الرد عليكم</p>
                         </div>
-                            <a href="#" class="rounded-pill mx-auto d-flex mb-5">
+                            <a href="#" class="rounded-pill mx-auto d-flex mb-5 wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="150">
                                 <p class="my-auto">
                                     1215454551 002<span>+</span>
                                 </p>
@@ -357,7 +367,7 @@
     <section class="find-us">
         <div class="container">
             <div class="row mt-4">
-                <div class="col-md-6 pt-5">
+                <div class="col-md-6 pt-5 wow animate__animated animate__rotateInUpRight" data-wow-duration="1.5s" data-wow-offset="150">
                     <h3 class="my-3">تطبيق بنك الدم</h3>
                     <p class="lead my-4">
                         بنك الدم هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة ، لقد تم توليد هذا النص من مولد النص العربى 
@@ -365,15 +375,15 @@
                     <h3 class="my-5 text-center">متوفر على</h3>
                     <div class="row">
                         <div class="col-lg-6 google-icon d-flex">
-                            <a href="#" class="mx-auto"><img src="assets/imgs/google.png"></a>
+                            <a href="#" class="mx-auto hvr-grow-shadow"><img src="assets/imgs/google.png"></a>
                         </div>
                         <div class="col-lg-6 ios-icon d-flex">
-                            <a href="#" class="mx-auto"><img src="assets/imgs/ios.png"></a>
+                            <a href="#" class="mx-auto hvr-grow-shadow"><img src="assets/imgs/ios.png"></a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6 edit-app mt-5 p-3">
+                <div class="col-md-6 edit-app mt-5 p-3 wow animate__animated animate__rotateInUpLeft" data-wow-duration="1.5s" data-wow-offset="150">
                     <img src="assets/imgs/App.png" class="w-100">
                 </div>
             </div>
@@ -401,15 +411,15 @@
                         <li class="mb-3"><a class="here" href="index.html">الرئيسية</a></li>
                         <li class="mb-3"><a href="#">عن بنك الدم</a></li>
                         <li class="mb-3"><a href="#">المقالات</a></li>
-                        <li class="mb-3"><a href="#">طلبات التبرع</a></li>
-                        <li class="mb-3"><a href="#">من نحن</a></li>
+                        <li class="mb-3"><a href="donation-request.html">طلبات التبرع</a></li>
+                        <li class="mb-3"><a href="about-us.html">من نحن</a></li>
                         <li><a href="contact-us.html">اتصل بنا</a></li>
                     </ul>
                 </div>
                 <div class="col-md-6 col-lg-4 footer-find">
                     <p class="mx-auto mb-4 mt-4 mt-md-2 text-center">متوفر على</p>
-                    <a href="#"><img src="assets/imgs/google1.png" class="d-block mx-auto mb-3"></a>
-                    <a href="#"><img src="assets/imgs/ios1.png" class="d-block mx-auto mb-3"></a>
+                    <a href="#" class="hvr-float-shadow d-block"><img src="assets/imgs/google1.png" class="d-block mx-auto mb-3"></a>
+                    <a href="#" class="hvr-float-shadow d-block"><img src="assets/imgs/ios1.png" class="d-block mx-auto mb-3"></a>
                 </div>
             </div>
         </div>
@@ -417,10 +427,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 social-media">
-                        <a href="#" class="ml-3"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="ml-3"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="ml-3"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="ml-3"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="ml-3 hvr-icon-push"><i class="fab fa-facebook-f hvr-icon"></i></a>
+                        <a href="#" class="ml-3 hvr-icon-push"><i class="fab fa-instagram hvr-icon"></i></a>
+                        <a href="#" class="ml-3 hvr-icon-push"><i class="fab fa-twitter hvr-icon"></i></a>
+                        <a href="#" class="ml-3 hvr-icon-push"><i class="fab fa-whatsapp hvr-icon"></i></a>
                     </div>
                     <div class="col-md-4">
                         جميع الحقوق محفوظة ل <a href="index.html"> بنك الدم</a> &#169; 2021
@@ -431,6 +441,25 @@
     </footer>
     <!--Ending footer-->
 
+
+    <script src="assets/js/jquery-1.12.4.js"></script>
+    <script src="assets/js/jquery.smoothscroll.min.js"></script>
+    <script>
+        $('a[href*="#about-target"]').smoothscroll({
+            duration: 1500
+        });
+        $('a[href*="#articles-target"]').smoothscroll({
+            duration: 1500
+        });
+    </script>
+
+<script src="assets/js/jquery.nicescroll.min.js"></script>
+<script>
+    $("body").niceScroll({
+    cursorcolor:"aquamarine",
+    cursorwidth:"14px"
+});
+</script>
 
     <!--font awesome plugin-->
     <script src="assets/js/all.min.js"></script>
@@ -445,5 +474,10 @@
 
     <!--my own plugin-->
     <script src="assets/js/my-plugins.js"></script>
+
+    <script src="assets/js/wow.js"></script>
+    <script>new WOW().init();</script>
+
+
 </body>
 </html>
